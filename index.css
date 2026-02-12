@@ -4,14 +4,14 @@
 
 @layer base {
   :root {
-    --color-navy: #002C5F;
-    /* Traditional Deep Navy */
-    --color-electric-blue: #004B87;
-    /* Renamed to Standard Blue, keeping var name for now to avoid breaking */
-    --color-gold: #BFA15F;
-    /* Muted Gold */
-    --color-red: #C8102E;
-    /* Power Red */
+    --color-navy: #212944;
+    /* Updated from live site */
+    --color-electric-blue: #2EA3F2;
+    /* Updated from live site */
+    --color-gold: #EEE5CC;
+    /* Updated from live site */
+    --color-red: #CF2E2E;
+    /* Updated from live site */
     --color-light-gray: #F8F9FA;
   }
 

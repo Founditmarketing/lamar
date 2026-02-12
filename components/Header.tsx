@@ -60,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
               onClick={() => handleNavClick('home')}
               aria-label="Lamar National Bank Home"
             >
-              <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center text-lamar-blue font-bold text-xl">L</div>
+              <img src="/logo.png" alt="Lamar National Bank" className="h-10 w-auto object-contain" />
               <span className="font-bold text-xl tracking-tight uppercase">Lamar National Bank</span>
             </button>
 

@@ -16,6 +16,7 @@ import { Footer } from './components/Footer';
 import { LiveAssistant } from './components/LiveAssistant';
 import { PlaceholderPage } from './components/PlaceholderPage';
 import { LanguageProvider, useLanguage } from './components/LanguageContext';
+import { JSONLD } from './components/JSONLD';
 import { ArrowRight, Smartphone, Home as HomeIcon, Briefcase } from 'lucide-react';
 import { FeatureCard } from './components/ui/FeatureCard';
 
@@ -79,7 +80,7 @@ const AppContent: React.FC = () => {
       case 'business':
         return <BusinessPage />;
       case 'about':
-        return <AboutPage />;
+        return <AboutPage onNavigate={handleNavClick} />;
       case 'resources':
         return <ResourcesPage />;
       case 'education':
@@ -153,6 +154,33 @@ const AppContent: React.FC = () => {
 
               </div>
             </div>
+
+            {/* Local Impact & Community Q&A Section */}
+            <div className="bg-gray-50 py-24 border-t border-gray-100">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                  <div>
+                    <h2 className="text-3xl font-bold text-lamar-navy mb-6">{t('seo.content.title')}</h2>
+                    <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
+                      <p>{t('seo.content.p1')}</p>
+                      <p>{t('seo.content.p2')}</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-6">
+                    <h3 className="text-xl font-bold text-lamar-navy mb-4">Common Questions in Our Communities</h3>
+                    <div className="space-y-4">
+                      {[4, 5, 6].map((num) => (
+                        <div key={num} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                          <h4 className="font-bold text-lamar-blue mb-2">{t(`faq.q${num}`)}</h4>
+                          <p className="text-gray-600 text-sm leading-relaxed">{t(`faq.a${num}`)}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </>
         );
     }
@@ -166,6 +194,7 @@ const AppContent: React.FC = () => {
           {renderContent()}
         </main>
         <Footer onNavigate={handleNavClick} />
+        <JSONLD />
         <LiveAssistant />
       </div>
     </ReactLenis>

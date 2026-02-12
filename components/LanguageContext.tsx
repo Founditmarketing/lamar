@@ -21,7 +21,7 @@ const translations: Record<string, Record<Language, string>> = {
   'nav.language': { en: 'Español', es: 'English' },
   'nav.menu.open': { en: 'Open menu', es: 'Abrir menú' },
   'nav.menu.close': { en: 'Close menu', es: 'Cerrar menú' },
-  
+
   // Live Assistant
   'live.title': { en: 'Lamar Assistant', es: 'Asistente Lamar' },
   'live.offline': { en: 'OFFLINE', es: 'DESCONECTADO' },
@@ -33,7 +33,7 @@ const translations: Record<string, Record<Language, string>> = {
   'live.status.speaking': { en: 'Speaking...', es: 'Hablando...' },
   'live.error': { en: 'Connection failed. Please try again.', es: 'Conexión fallida. Intente de nuevo.' },
   'live.disclaimer': { en: 'AI Assistant can make mistakes.', es: 'El asistente de IA puede cometer errores.' },
-  
+
   // Search Overlay
   'search.modal.placeholder': { en: 'Ask about rates, hours, or services...', es: 'Pregunte sobre tasas, horarios o servicios...' },
   'search.modal.searching': { en: 'Searching...', es: 'Buscando...' },
@@ -103,7 +103,7 @@ const translations: Record<string, Record<Language, string>> = {
   'service.investing': { en: 'Investing', es: 'Inversiones' },
   'service.security': { en: 'Security', es: 'Seguridad' },
   'service.mobile': { en: 'Mobile App', es: 'Banca Móvil' },
-  
+
   // Service Grid Specific
   'service.grid.checking': { en: 'Checking', es: 'Cheques' },
   'service.grid.savings': { en: 'Savings', es: 'Ahorros' },
@@ -219,7 +219,7 @@ const translations: Record<string, Record<Language, string>> = {
   'business.rates.title': { en: 'Current Rates', es: 'Tasas Actuales' },
   'business.rates.desc': { en: 'View our competitive rates for savings and CDs.', es: 'Vea nuestras tasas competitivas para ahorros y CD.' },
   'business.rates.link': { en: 'Check Rates', es: 'Ver Tasas' },
-  
+
   // Business Growth Strategist
   'biz.growth.title': { en: 'Business Growth Strategist', es: 'Estratega de Crecimiento Empresarial' },
   'biz.growth.subtitle': { en: 'AI-powered insights to take your enterprise to the next level.', es: 'Perspectivas impulsadas por IA para llevar su empresa al siguiente nivel.' },
@@ -247,7 +247,7 @@ const translations: Record<string, Record<Language, string>> = {
   'about.lead.title': { en: 'Led by Locals', es: 'Liderado por Locales' },
   'about.lead.desc': { en: 'Our executive team and board of directors are comprised of local business leaders who understand the unique economic landscape of Texas.', es: 'Nuestro equipo ejecutivo y junta directiva están compuestos por líderes empresariales locales que entienden el panorama económico único de Texas.' },
   'about.lead.btn': { en: 'View Leadership Team', es: 'Ver Equipo de Liderazgo' },
-  
+
   // Resources Page
   'resources.hero.title': { en: 'Resources & Tools', es: 'Recursos y Herramientas' },
   'resources.hero.subtitle': { en: 'Everything you need to manage your financial life securely and effectively.', es: 'Todo lo que necesita para administrar su vida financiera de manera segura y efectiva.' },
@@ -283,7 +283,7 @@ const translations: Record<string, Record<Language, string>> = {
   'compare.val.high': { en: 'Higher Rate', es: 'Tasa Más Alta' },
   'compare.badge.pop': { en: 'Popular', es: 'Popular' },
   'compare.advisor.label': { en: 'AI Advisor', es: 'Asesor IA' },
-  
+
   // Compare AI Assistant
   'compare.ai.title': { en: 'Not sure? Let AI help you choose.', es: '¿No está seguro? Deje que la IA le ayude.' },
   'compare.ai.subtitle': { en: 'Tell us how you bank, and we will recommend the best account.', es: 'Cuéntenos cómo usa su banco y le recomendaremos la mejor cuenta.' },
@@ -308,7 +308,7 @@ const translations: Record<string, Record<Language, string>> = {
   'loc.call': { en: 'Call', es: 'Llamar' },
   'loc.directions': { en: 'Directions', es: 'Direcciones' },
   'loc.map.notice': { en: 'Map view is simulated.', es: 'La vista del mapa es simulada.' },
-  
+
   // Security Page
   'sec.title': { en: 'Security Center', es: 'Centro de Seguridad' },
   'sec.subtitle': { en: 'Protecting your financial well-being is our top priority. Use our AI tools to detect potential threats.', es: 'Proteger su bienestar financiero es nuestra principal prioridad. Utilice nuestras herramientas de IA para detectar posibles amenazas.' },
@@ -344,17 +344,48 @@ const translations: Record<string, Record<Language, string>> = {
   'edu.cta.title': { en: 'Want to dive deeper?', es: '¿Quiere profundizar más?' },
   'edu.cta.desc': { en: 'Our team of local bankers is always ready to sit down and discuss your financial future over a cup of coffee. No AI required.', es: 'Nuestro equipo de banqueros locales siempre está listo para sentarse y hablar sobre su futuro financiero con una taza de café. No se requiere IA.' },
   'edu.cta.btn': { en: 'Schedule an Appointment', es: 'Programar Cita' },
+
+  // SEO Content Expansion
+  'seo.content.title': { en: 'Our Service in Texas', es: 'Nuestro Servicio en Texas' },
+  'seo.content.p1': {
+    en: 'At Lamar National Bank, we don\'t just provide accounts; we power progress in every community we serve. In Paris, we are the go-to partner for small business growth through specialized SBA lending. In Celina and Frisco, our commercial banking teams work on the ground to fund development and machinery that drives the local economy.',
+    es: 'En Lamar National Bank, no solo proporcionamos cuentas; impulsamos el progreso en cada comunidad a la que servimos. En Paris, somos el socio ideal para el crecimiento de las pequeñas empresas a través de préstamos especializados de la SBA. En Celina y Frisco, nuestros equipos de banca comercial trabajan sobre el terreno para financiar el desarrollo y la maquinaria que impulsa la economía local.'
+  },
+  'seo.content.p2': {
+    en: 'Whether you\'re looking for a personal mortgage in Frisco or wealth management in North Tarrant, you\'ll find a local banker who understands your neighborhood. We believe in banking that\'s as big as Texas but as personal as a handshake.',
+    es: 'Ya sea que busque una hipoteca personal en Frisco o gestión de patrimonio en North Tarrant, encontrará un banquero local que comprende su vecindario. Creemos en una banca que es tan grande como Texas pero tan personal como un apretón de manos.'
+  },
+  'seo.content.keywords': {
+    en: 'Texas Community Banking, Commercial Loans Paris TX, SBA Preferred Lender, North Texas Mortgages, Celina Business Banking, Frisco Financial Services, Personal Checking Accounts Texas.',
+    es: 'Banca Comunitaria de Texas, Préstamos Comerciales Paris TX, Prestamista Preferido de la SBA, Hipotecas del Norte de Texas, Banca Comercial de Celina, Servicios Financieros de Frisco, Cuentas de Cheques Personales en Texas.'
+  },
+
+  // FAQ for Schema
+  'faq.q1': { en: 'What services does Lamar National Bank offer?', es: '¿Qué servicios ofrece Lamar National Bank?' },
+  'faq.a1': { en: 'We offer a full suite of personal and business banking services, including checking and savings accounts, commercial lending, mortgage solutions, and advanced digital banking tools.', es: 'Ofrecemos un conjunto completo de servicios bancarios personales y comerciales, que incluyen cuentas de cheques y ahorros, préstamos comerciales, soluciones hipotecarias y herramientas avanzadas de banca digital.' },
+  'faq.q2': { en: 'Where are your branches located?', es: '¿Dónde se encuentran sus sucursales?' },
+  'faq.a2': { en: 'We have branches and loan production offices in Paris, Reno, Celina, North Tarrant, Frisco, Plano, and Bryan, Texas.', es: 'Tenemos sucursales y oficinas de préstamos en Paris, Reno, Celina, North Tarrant, Frisco, Plano y Bryan, Texas.' },
+  'faq.q3': { en: 'Do you offer online and mobile banking?', es: '¿Ofrecen banca en línea y móvil?' },
+  'faq.a3': { en: 'Yes, our modern digital banking platform allows you to manage accounts, deposit checks, and transfer funds securely from any device.', es: 'Sí, nuestra moderna plataforma de banca digital le permite administrar cuentas, depositar cheques y transferir fondos de forma segura desde cualquier dispositivo.' },
+
+  // Expanded Geo Q&A
+  'faq.q4': { en: 'Does Lamar National Bank offer SBA loans in Paris, TX?', es: '¿Ofrece Lamar National Bank préstamos de la SBA en Paris, TX?' },
+  'faq.a4': { en: 'Yes, we are a preferred SBA lender serving Paris and the surrounding Lamar County area, helping small businesses secure the funding they need to grow.', es: 'Sí, somos un prestamista preferido de la SBA que sirve a Paris y el área circundante del condado de Lamar, ayudando a las pequeñas empresas a obtener el financiamiento que necesitan para crecer.' },
+  'faq.q5': { en: 'Where can I find a commercial lender in Frisco or Celina?', es: '¿Dónde puedo encontrar un prestamista comercial en Frisco o Celina?' },
+  'faq.a5': { en: 'We have dedicated commercial lending teams in our Frisco and Celina branches specializing in real estate, equipment, and working capital loans for North Texas businesses.', es: 'Tenemos equipos dedicados de préstamos comerciales en nuestras sucursales de Frisco y Celina que se especializan en préstamos para bienes raíces, equipos y capital de trabajo para empresas del norte de Texas.' },
+  'faq.q6': { en: 'What sets Lamar National apart from big banks in Texas?', es: '¿Qué diferencia a Lamar National de los grandes bancos de Texas?' },
+  'faq.a6': { en: 'As a relationship-first community bank, our decisions are made locally in Texas. You get direct access to decision-makers and a banker who understands the specific needs of your community.', es: 'Como banco comunitario de relación primero, nuestras decisiones se toman localmente en Texas. Obtiene acceso directo a los tomadores de decisiones y a un banquero que comprende las necesidades específicas de su comunidad.' },
 };
 
 export const LanguageContext = createContext<LanguageContextType>({
   language: 'en',
-  setLanguage: () => {},
+  setLanguage: () => { },
   t: (key) => key,
 });
 
 export const useLanguage = () => useContext(LanguageContext);
 
-export const LanguageProvider: React.FC<{children: ReactNode}> = ({ children }) => {
+export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>('en');
 
   const t = (key: string) => {
