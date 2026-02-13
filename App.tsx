@@ -19,6 +19,7 @@ import { LanguageProvider, useLanguage } from './components/LanguageContext';
 import { JSONLD } from './components/JSONLD';
 import { ArrowRight, Smartphone, Home as HomeIcon, Briefcase } from 'lucide-react';
 import { FeatureCard } from './components/ui/FeatureCard';
+import { PasswordProtection } from './components/PasswordProtection';
 
 // The main layout component that has access to the language context
 const AppContent: React.FC = () => {
@@ -204,7 +205,9 @@ const AppContent: React.FC = () => {
 const App: React.FC = () => {
   return (
     <LanguageProvider>
-      <AppContent />
+      <PasswordProtection>
+        <AppContent />
+      </PasswordProtection>
     </LanguageProvider>
   );
 };
