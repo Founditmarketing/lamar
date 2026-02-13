@@ -61,7 +61,6 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
               aria-label="Lamar National Bank Home"
             >
               <img src="/logo.png" alt="Lamar National Bank" className="h-10 w-auto object-contain" />
-              <span className="font-bold text-xl tracking-tight uppercase">Lamar National Bank</span>
             </button>
 
             {/* Desktop Navigation */}
