@@ -25,7 +25,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     {/* Column 1: Brand, Contact & Social */}
                     <div>
                         <div className="flex items-center gap-2 mb-6">
-                            <img src="/logo.png" alt="Lamar National Bank" className="h-12 w-auto object-contain bg-white rounded-sm p-1" />
+                            <img src="/logo.png" alt="Lamar National Bank" className="h-12 w-auto object-contain" />
                         </div>
 
                         <ul className="space-y-4 text-sm text-gray-300 mb-8">
