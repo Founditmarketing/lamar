@@ -1,0 +1,8 @@
+{
+  "name": "Lamar National Bank - Redesign",
+  "description": "A modern redesign of the Lamar National Bank homepage using the layout principles of Chase Bank, built with React and Tailwind CSS.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ]
+}
