@@ -163,7 +163,7 @@ export const SearchOverlay: React.FC<SearchOverlayProps> = ({ isOpen, onClose, i
                         onClick={toggleListening}
                         className={`p-3 rounded-full transition-all duration-300 ${
                             isListening 
-                                ? 'bg-red-100 text-red-600 animate-pulse ring-2 ring-red-400' 
+                                ? 'bg-blue-100 text-blue-600 animate-pulse ring-2 ring-blue-400' 
                                 : 'hover:bg-gray-100 text-gray-500'
                         }`}
                         title="Search by voice"
@@ -187,15 +187,15 @@ export const SearchOverlay: React.FC<SearchOverlayProps> = ({ isOpen, onClose, i
                 <div className="overflow-y-auto p-6 md:p-8 bg-gray-50 flex-grow min-h-[300px]">
                     
                     {error && (
-                        <div className="text-red-600 bg-red-50 p-4 rounded-lg border border-red-100 text-center">
+                        <div className="text-blue-600 bg-blue-50 p-4 rounded-lg border border-blue-100 text-center">
                             {error}
                         </div>
                     )}
                     
                     {isListening && !error && (
                         <div className="text-center py-8">
-                             <div className="inline-block p-4 rounded-full bg-red-50 mb-3">
-                                <Mic size={32} className="text-red-500 animate-bounce" />
+                             <div className="inline-block p-4 rounded-full bg-blue-50 mb-3">
+                                <Mic size={32} className="text-blue-500 animate-bounce" />
                              </div>
                              <p className="text-gray-600 font-medium">{t('live.status.listening')}</p>
                         </div>

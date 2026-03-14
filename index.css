@@ -8,10 +8,6 @@
     /* Updated from live site */
     --color-electric-blue: #2EA3F2;
     /* Updated from live site */
-    --color-gold: #EEE5CC;
-    /* Updated from live site */
-    --color-red: #CF2E2E;
-    /* Updated from live site */
     --color-light-gray: #F8F9FA;
   }
 
@@ -80,11 +76,11 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-lamar-gold/50 rounded-full hover:bg-lamar-gold transition-colors;
+    @apply bg-lamar-blue/50 rounded-full hover:bg-lamar-blue transition-colors;
   }
 
   /* Premium Text Selection */
   ::selection {
-    @apply bg-lamar-gold/30 text-lamar-navy;
+    @apply bg-lamar-blue/30 text-lamar-navy;
   }
 }

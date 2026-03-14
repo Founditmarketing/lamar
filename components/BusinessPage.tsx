@@ -102,7 +102,7 @@ export const BusinessPage: React.FC = () => {
           <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
             {t('business.subtitle')}
           </p>
-          <a href="https://www.lamarnationalbank.com/business/commercial-lending/" target="_blank" rel="noopener noreferrer" className="inline-block mt-8 bg-lamar-red hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition-colors">
+          <a href="https://www.lamarnationalbank.com/business/commercial-lending/" target="_blank" rel="noopener noreferrer" className="inline-block mt-8 bg-lamar-blue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors">
             {t('business.cta')}
           </a>
         </div>
@@ -155,7 +155,7 @@ export const BusinessPage: React.FC = () => {
                           t('business.treasury.list4')
                         ].map((item) => (
                             <li key={item} className="flex items-center gap-3 text-gray-700">
-                                <div className="w-2 h-2 bg-lamar-red rounded-full"></div>
+                                <div className="w-2 h-2 bg-lamar-blue rounded-full"></div>
                                 {item}
                             </li>
                         ))}
@@ -211,7 +211,7 @@ export const BusinessPage: React.FC = () => {
                                 <button 
                                     onClick={handleGenerateStrategy}
                                     disabled={aiLoading || !revenue || !industry || !focus}
-                                    className="w-full bg-gradient-to-r from-lamar-red to-red-600 hover:from-red-600 hover:to-red-700 disabled:opacity-50 text-white font-bold py-3 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2 mt-2"
+                                    className="w-full bg-gradient-to-r from-lamar-blue to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:opacity-50 text-white font-bold py-3 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2 mt-2"
                                 >
                                     {aiLoading ? <Loader2 size={18} className="animate-spin" /> : <Target size={18} />}
                                     {aiLoading ? t('biz.growth.analyzing') : t('biz.growth.btn')}

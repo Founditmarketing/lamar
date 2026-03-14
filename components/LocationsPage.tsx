@@ -307,7 +307,7 @@ export const LocationsPage: React.FC = () => {
                               </div>
                               {loc.driveThruHours && (
                                 <div className="flex items-center gap-2 text-sm text-gray-600">
-                                    <Clock size={14} className="text-lamar-red" />
+                                    <Clock size={14} className="text-lamar-blue" />
                                     <span className="font-medium">{t('loc.hours.drive')}:</span>
                                     <span>{getHoursLabel(loc.driveThruHours)}</span>
                                 </div>

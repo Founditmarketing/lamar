@@ -165,10 +165,10 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
           </div>
 
           {/* Loans Card */}
-          <div id="lending" className="bg-white rounded-xl shadow-lg border-t-4 border-lamar-red hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full scroll-mt-24">
+          <div id="lending" className="bg-white rounded-xl shadow-lg border-t-4 border-lamar-blue hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full scroll-mt-24">
             <div className="p-6 md:p-8 flex-grow flex flex-col">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-red-50 flex items-center justify-center text-lamar-red flex-shrink-0">
+                <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-lamar-blue flex-shrink-0">
                     <Home size={28} />
                 </div>
                 <div>
@@ -200,7 +200,7 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
                 href="https://loans.lamarnational.com/s/login/?language=en_US&ec=302&startURL=%2Fs%2F" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-bold rounded-lg shadow-sm text-white bg-lamar-red hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-red transition-colors mt-auto"
+                className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-bold rounded-lg shadow-sm text-white bg-lamar-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-blue transition-colors mt-auto"
               >
                 {t('personal.lending.btn')}
               </a>
@@ -263,8 +263,8 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
                     {/* Results Section */}
                     <div className="relative min-h-[400px]">
                         {error ? (
-                            <div className="h-full bg-white/10 backdrop-blur-md rounded-xl border border-red-400/30 flex flex-col items-center justify-center text-center p-8 animate-fadeIn">
-                                <AlertCircle size={48} className="text-red-300 mb-4" />
+                            <div className="h-full bg-white/10 backdrop-blur-md rounded-xl border border-blue-400/30 flex flex-col items-center justify-center text-center p-8 animate-fadeIn">
+                                <AlertCircle size={48} className="text-blue-300 mb-4" />
                                 <p className="text-white font-medium text-lg mb-2">Something went wrong</p>
                                 <p className="text-blue-100 text-sm max-w-xs">{error}</p>
                                 <button onClick={() => setError(null)} className="mt-6 text-xs text-white underline hover:text-teal-200">Try again</button>

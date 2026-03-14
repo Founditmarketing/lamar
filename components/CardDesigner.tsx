@@ -105,7 +105,7 @@ export const CardDesigner: React.FC = () => {
         <section className="py-16 bg-white border-t border-gray-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center gap-3 mb-8">
-                    <div className="bg-lamar-red text-white p-2 rounded-lg">
+                    <div className="bg-lamar-blue text-white p-2 rounded-lg">
                         <Palette size={24} />
                     </div>
                     <div>
@@ -175,7 +175,7 @@ export const CardDesigner: React.FC = () => {
                                 <button
                                     onClick={handleGenerate}
                                     disabled={loading || !prompt}
-                                    className="w-full flex items-center justify-center py-3 px-4 rounded-full bg-lamar-red text-white font-bold hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-red disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-md"
+                                    className="w-full flex items-center justify-center py-3 px-4 rounded-full bg-lamar-blue text-white font-bold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-blue disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-md"
                                 >
                                     {loading ? (
                                         <>
@@ -190,7 +190,7 @@ export const CardDesigner: React.FC = () => {
                                     )}
                                 </button>
                                 {error && (
-                                    <div className="text-red-600 text-sm bg-red-50 p-3 rounded-lg border border-red-100">
+                                    <div className="text-blue-600 text-sm bg-blue-50 p-3 rounded-lg border border-blue-100">
                                         {error}
                                     </div>
                                 )}

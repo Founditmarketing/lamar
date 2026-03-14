@@ -85,7 +85,7 @@ export const LoginWidget: React.FC<LoginWidgetProps> = ({ onNavigate }) => {
         {/* Sign In Button */}
         <button
           type="submit"
-          className="w-full flex justify-center py-3.5 px-4 border border-transparent rounded-xl shadow-lg shadow-red-600/20 text-sm font-bold text-white bg-lamar-red hover:bg-red-700 transform hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-red"
+          className="w-full flex justify-center py-3.5 px-4 border border-transparent rounded-xl shadow-lg shadow-blue-600/20 text-sm font-bold text-white bg-lamar-blue hover:bg-blue-700 transform hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-blue"
         >
           {t('login.signin')}
         </button>

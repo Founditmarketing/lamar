@@ -38,7 +38,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                                 <button onClick={() => onNavigate('contact')} aria-label={t('footer.aria.email')} className="hover:text-white hover:underline transition-colors text-left">{t('footer.contact')}</button>
                             </li>
                             <li className="pl-8">
-                                <button onClick={() => onNavigate('lost-card')} className="hover:text-white hover:underline font-medium text-red-400 hover:text-red-300 transition-colors text-left">{t('footer.lost')}</button>
+                                <button onClick={() => onNavigate('lost-card')} className="hover:text-white hover:underline font-medium text-blue-400 hover:text-blue-300 transition-colors text-left">{t('footer.lost')}</button>
                             </li>
                         </ul>
 
@@ -59,11 +59,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                             {/* Main Bank */}
                             <button onClick={() => onNavigate('locations')} className="group bg-white/5 border border-white/10 p-4 rounded-lg hover:bg-white/10 transition-all hover:border-white/20 text-left w-full">
                                 <div className="flex items-start gap-3">
-                                    <div className="bg-lamar-red p-1.5 rounded-full mt-0.5">
+                                    <div className="bg-lamar-blue p-1.5 rounded-full mt-0.5">
                                         <MapPin size={14} className="text-white" />
                                     </div>
                                     <div>
-                                        <span className="block font-bold text-white text-sm group-hover:underline decoration-lamar-red underline-offset-4">{t('footer.loc.paris')}</span>
+                                        <span className="block font-bold text-white text-sm group-hover:underline decoration-lamar-blue underline-offset-4">{t('footer.loc.paris')}</span>
                                         <span className="text-xs text-blue-200 mt-1 block">{t('footer.hq')}</span>
                                     </div>
                                 </div>

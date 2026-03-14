@@ -20,7 +20,7 @@ export const PlaceholderPage: React.FC<PlaceholderPageProps> = ({ title }) => {
             <p className="text-xl text-gray-500 max-w-lg mb-8">
                 We're currently building a World-Class experience for this page. Check back soon.
             </p>
-            <div className="h-1 w-20 bg-lamar-gold rounded-full"></div>
+            <div className="h-1 w-20 bg-lamar-blue rounded-full"></div>
         </div>
     );
 };

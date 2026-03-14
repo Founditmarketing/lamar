@@ -107,15 +107,15 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({ onNavigate }) => {
                 </div>
 
                 {/* Security Card */}
-                <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-8 border-t-4 border-red-500">
-                    <div className="w-14 h-14 bg-red-50 text-red-500 rounded-xl flex items-center justify-center mb-6">
+                <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-8 border-t-4 border-blue-500">
+                    <div className="w-14 h-14 bg-blue-50 text-blue-500 rounded-xl flex items-center justify-center mb-6">
                         <ShieldCheck size={32} />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-3">{t('resources.sec.title')}</h3>
                     <p className="text-gray-600 mb-6">{t('resources.sec.desc')}</p>
                     <button 
                         onClick={() => handleNav('security')}
-                        className="w-full py-3 border border-red-500 text-red-500 font-bold rounded-lg hover:bg-red-50 transition-colors flex items-center justify-center gap-2"
+                        className="w-full py-3 border border-blue-500 text-blue-500 font-bold rounded-lg hover:bg-blue-50 transition-colors flex items-center justify-center gap-2"
                     >
                         {t('res.btn.security')} <ArrowRight size={18} />
                     </button>
@@ -234,7 +234,7 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({ onNavigate }) => {
                                         href="https://loans.lamarnational.com/s/login/?language=en_US&ec=302&startURL=%2Fs%2F"
                                         target="_blank" 
                                         rel="noopener noreferrer"
-                                        className="w-full bg-lamar-red text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition-colors flex items-center justify-center gap-2 shadow-sm"
+                                        className="w-full bg-lamar-blue text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 shadow-sm"
                                     >
                                         Start Mortgage Application <ExternalLink size={18} />
                                     </a>

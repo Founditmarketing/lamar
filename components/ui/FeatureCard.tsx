@@ -56,7 +56,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, im
 
       {/* Content */}
       <div className="absolute bottom-0 left-0 right-0 p-8 text-left transform transition-transform duration-500 group-hover:-translate-y-2">
-        <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-md text-lamar-gold border border-white/20 shadow-lg group-hover:scale-110 transition-transform duration-500">
+        <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-md text-lamar-blue border border-white/20 shadow-lg group-hover:scale-110 transition-transform duration-500">
           <Icon size={28} />
         </div>
         

@@ -74,7 +74,7 @@ export const SecurityPage: React.FC = () => {
     const getRiskStyles = (risk: string) => {
         switch (risk) {
             case 'safe': return 'bg-green-50 border-green-200 text-green-800';
-            case 'danger': return 'bg-red-50 border-red-200 text-red-800';
+            case 'danger': return 'bg-blue-50 border-blue-200 text-blue-800';
             default: return 'bg-yellow-50 border-yellow-200 text-yellow-800';
         }
     };
@@ -82,7 +82,7 @@ export const SecurityPage: React.FC = () => {
     const getRiskIcon = (risk: string) => {
         switch (risk) {
             case 'safe': return <CheckCircle2 size={24} className="text-green-600" />;
-            case 'danger': return <ShieldAlert size={24} className="text-red-600" />;
+            case 'danger': return <ShieldAlert size={24} className="text-blue-600" />;
             default: return <AlertTriangle size={24} className="text-yellow-600" />;
         }
     };
@@ -149,7 +149,7 @@ export const SecurityPage: React.FC = () => {
                                 <button
                                     onClick={analyzeScam}
                                     disabled={loading || !scamText}
-                                    className="w-full bg-lamar-red hover:bg-red-700 disabled:opacity-50 text-white font-bold py-3 rounded-lg transition-all shadow-sm flex items-center justify-center gap-2 text-sm"
+                                    className="w-full bg-lamar-blue hover:bg-blue-700 disabled:opacity-50 text-white font-bold py-3 rounded-lg transition-all shadow-sm flex items-center justify-center gap-2 text-sm"
                                 >
                                     {loading ? <Loader2 className="animate-spin" size={18} /> : <ShieldCheck size={18} />}
                                     {loading ? t('sec.scam.analyzing') : t('sec.scam.btn')}
