@@ -191,7 +191,7 @@ const AppContent: React.FC = () => {
   };
 
   return (
-    <ReactLenis root>
+    <ReactLenis root options={{ duration: 1.2, wheelMultiplier: 1.0, smoothWheel: true }}>
       <div className="min-h-screen flex flex-col font-sans bg-gray-50 selection:bg-lamar-navy selection:text-white">
         <Header onNavigate={handleNavClick} currentPage={currentPage} />
         <main className="flex-grow">

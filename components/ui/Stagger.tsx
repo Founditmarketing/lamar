@@ -35,8 +35,8 @@ export const FadeIn: React.FC<{ children: React.ReactNode; className?: string }>
     return (
         <motion.div
             variants={{
-                hidden: { opacity: 0, y: 20 },
-                show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 50, damping: 20 } }
+                hidden: { opacity: 0, y: 20, filter: 'blur(8px)' },
+                show: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { type: "spring", stiffness: 50, damping: 20 } }
             }}
             className={className}
         >
