@@ -1,8 +1,6 @@
-// Imports
 import React from 'react';
-import { LoginWidget } from './LoginWidget';
+import { ArrowRight, Star } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
-import { ArrowRight } from 'lucide-react';
 import { Stagger, FadeIn } from './ui/Stagger';
 import { MagneticButton } from './ui/MagneticButton';
 
@@ -18,9 +16,9 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
             {/* Animated Background Image Container */}
             <div className="absolute inset-0 w-full h-full overflow-hidden">
                 <img
-                    src="https://images.unsplash.com/photo-1541451378359-ac3e43846618?q=80&w=2070&auto=format&fit=crop"
-                    alt="Texas Capital"
-                    className="w-full h-full object-cover object-center animate-slow-zoom opacity-60"
+                    src="/hero_east_texas.png"
+                    alt="East Texas Landscape"
+                    className="w-full h-full object-cover object-center animate-slow-zoom opacity-70"
                 />
                 {/* Cinematic Gradients */}
                 <div className="absolute inset-0 bg-gradient-to-r from-lamar-navy via-lamar-navy/95 to-lamar-navy/40"></div>
@@ -37,12 +35,9 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                 {/* Left Side: Marketing Message */}
                 <Stagger className="flex-1 text-white z-10 max-w-4xl">
                     <FadeIn>
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lamar-navy border border-lamar-navy/30 text-xs font-mono tracking-widest text-lamar-navy mb-8 shadow-lg uppercase">
-                            <span className="relative flex h-2 w-2">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lamar-navy opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-2 w-2 bg-lamar-navy"></span>
-                            </span>
-                            [ 01 — SYSTEM ] The Future of Texas Banking
+                        <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm font-bold tracking-wide text-white mb-8 shadow-lg">
+                            <Star className="text-yellow-400 fill-yellow-400" size={16} />
+                            A PROUD TEXAS INSTITUTION SINCE 1933
                         </div>
                     </FadeIn>
 
@@ -75,13 +70,6 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                         </MagneticButton>
                     </FadeIn>
                 </Stagger>
-
-                {/* Right Side: Login Widget */}
-                <div className="w-full md:w-[400px] flex-shrink-0 z-20 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-                    <div className="bg-lamar-navy border border-lamar-navy/20 rounded-3xl p-2 shadow-2xl ring-1 ring-white/5">
-                        <LoginWidget onNavigate={onNavigate} />
-                    </div>
-                </div>
             </div>
         </div>
     );

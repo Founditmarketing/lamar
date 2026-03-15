@@ -116,7 +116,8 @@ const AppContent: React.FC = () => {
             <Hero onNavigate={handleNavClick} />
             <ServiceGrid onNavigate={handleNavClick} />
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 animate-fade-up" style={{ animationDelay: '0.6s' }}>
+            {/* Adjusted padding to pt-12 to tighten the gap between ServiceGrid and Financial Wellness section */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20 animate-fade-up" style={{ animationDelay: '0.6s' }}>
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">{t('home.wellness')}</h2>
                 <div className="h-1 w-20 bg-lamar-navy mx-auto rounded-full"></div>
@@ -128,7 +129,7 @@ const AppContent: React.FC = () => {
                 <FeatureCard
                   title={t('home.balance.title')}
                   description={t('home.balance.desc')}
-                  image="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+                  image="/wellness_checking.png"
                   icon={Smartphone}
                   onClick={() => handleNavClick('personal#mobile')}
                   delay="0s"
@@ -138,7 +139,7 @@ const AppContent: React.FC = () => {
                 <FeatureCard
                   title={t('home.refinance.title')}
                   description={t('home.refinance.desc')}
-                  image="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800"
+                  image="/wellness_home.png"
                   icon={HomeIcon}
                   onClick={() => window.open('https://loans.lamarnational.com/s/login/?language=en_US&ec=302&startURL=%2Fs%2F', '_blank')}
                   delay="0.1s"
@@ -148,7 +149,7 @@ const AppContent: React.FC = () => {
                 <FeatureCard
                   title={t('home.biz.title')}
                   description={t('home.biz.desc')}
-                  image="https://images.unsplash.com/photo-1664575602276-acd073f104c1?auto=format&fit=crop&q=80&w=800"
+                  image="/wellness_business.png"
                   icon={Briefcase}
                   onClick={() => handleNavClick('business')}
                   delay="0.2s"
@@ -160,8 +161,9 @@ const AppContent: React.FC = () => {
             {/* Local Impact & Community Q&A Section */}
             <div className="bg-gray-50 py-24 border-t border-gray-100">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                  <div>
+                {/* Adjusted gap from gap-16 to gap-24 for better spacing between columns */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
+                  <div className="pr-0 md:pr-8">
                     <h2 className="text-3xl font-bold text-lamar-navy mb-6">{t('seo.content.title')}</h2>
                     <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                       <p>{t('seo.content.p1')}</p>

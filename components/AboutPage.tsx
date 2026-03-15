@@ -69,7 +69,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         initial={{ scale: 1.1, opacity: 0 }}
                         animate={{ scale: 1, opacity: 0.6 }}
                         transition={{ duration: 1.5, ease: "easeOut" }}
-                        src="https://images.unsplash.com/photo-1541451378359-ac3e43846618?q=80&w=2070"
+                        src="/about_history_bank.png"
                         alt="Texas Legacy"
                         className="w-full h-full object-cover"
                     />
@@ -174,13 +174,6 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
             {/* --- Values Grid Section --- */}
             <section className="py-20 md:py-32 bg-gray-50 relative overflow-hidden">
-                {/* Background Text Decor */}
-                <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden select-none opacity-[0.02] hidden md:block">
-                    <div className="text-[20rem] font-black text-lamar-navy whitespace-nowrap -translate-x-1/4">
-                        VALUED — SERVICE — TRUST
-                    </div>
-                </div>
-
                 <div className="max-w-7xl mx-auto px-4 relative z-10">
                     <div className="text-center mb-16 md:mb-24">
                         <h2 className="text-3xl md:text-5xl font-heading font-black text-lamar-navy mb-4 md:mb-6">Our Core Principles</h2>
@@ -193,17 +186,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         {values.map((value, idx) => (
                             <motion.div
                                 key={idx}
-                                initial={{ opacity: 0, y: 30 }}
+                                initial={{ opacity: 0.5, y: 15 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: idx * 0.1 }}
+                                viewport={{ once: true, margin: "-50px" }}
+                                transition={{ duration: 0.4, delay: idx * 0.1 }}
                                 className="group relative bg-white p-8 md:p-10 rounded-2xl md:rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500"
                             >
                                 <div className={`w-12 h-12 md:w-16 md:h-16 ${value.color} text-white rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-8 group-hover:rotate-6 transition-transform duration-500 shadow-lg`}>
                                     <value.icon size={28} className="md:w-8 md:h-8" />
                                 </div>
                                 <h4 className="text-xl md:text-2xl font-bold text-lamar-navy mb-3 md:mb-4">{value.title}</h4>
-                                <p className="text-sm md:text-base text-gray-600 font-light leading-relaxed">{value.desc}</p>
+                                <p className="text-sm md:text-base text-gray-800 font-medium leading-relaxed">{value.desc}</p>
 
                                 {/* Decorative Line */}
                                 <div className="absolute bottom-0 left-10 right-10 h-1 bg-gradient-to-r from-transparent via-lamar-navy/30 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700"></div>

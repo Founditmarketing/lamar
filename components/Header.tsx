@@ -3,6 +3,7 @@ import { Menu, Search, X, ChevronRight } from 'lucide-react';
 import { NavItem } from '../types';
 import { useLanguage } from './LanguageContext';
 import { SearchOverlay } from './SearchOverlay';
+import { LoginWidget } from './LoginWidget';
 
 interface HeaderProps {
   onNavigate: (page: string) => void;
@@ -12,6 +13,7 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOverlayOpen, setIsSearchOverlayOpen] = useState(false);
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const { language, setLanguage, t } = useLanguage();
 
@@ -44,12 +46,32 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
     <>
       <header className="bg-lamar-navy/95 backdrop-blur-md border-b border-white/10 text-white w-full shadow-lg z-50 sticky top-0 transition-all duration-300">
         {/* Top utility bar */}
-        <div className="bg-lamar-navy text-xs py-1 px-4 hidden md:flex justify-end gap-4 text-gray-300">
-          <button onClick={() => handleNavClick('locations')} className="hover:text-white transition-colors">{t('nav.atm')}</button>
-          <button onClick={toggleLanguage} className="hover:text-white transition-colors font-semibold" aria-label={`Change language to ${language === 'en' ? 'Spanish' : 'English'}`}>
-            {t('nav.language')}
-          </button>
-          <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors">{t('nav.support')}</button>
+        <div className="bg-lamar-navy text-xs py-1 px-4 hidden md:flex justify-end items-center gap-6 text-gray-300 relative z-50">
+          <div className="flex gap-4 items-center border-r border-white/20 pr-6">
+            <button onClick={() => handleNavClick('locations')} className="hover:text-white transition-colors">{t('nav.atm')}</button>
+            <button onClick={toggleLanguage} className="hover:text-white transition-colors font-semibold" aria-label={`Change language to ${language === 'en' ? 'Spanish' : 'English'}`}>
+              {t('nav.language')}
+            </button>
+            <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors">{t('nav.support')}</button>
+          </div>
+          
+          <div className="relative">
+            <button 
+              onClick={() => setIsLoginOpen(!isLoginOpen)}
+              className={`flex items-center gap-2 px-4 py-1.5 rounded-full font-bold transition-all ${isLoginOpen ? 'bg-white text-lamar-navy' : 'bg-white/10 text-white hover:bg-white/20'}`}
+            >
+              SECURE LOGIN
+            </button>
+          </div>
+        </div>
+
+        {/* Login Dropdown */}
+        <div className={`absolute top-full right-4 md:right-8 z-50 transition-all duration-300 transform origin-top-right ${isLoginOpen ? 'scale-100 opacity-100 visible' : 'scale-95 opacity-0 invisible'}`}>
+            <div className="mt-2 w-[350px] md:w-[400px]">
+                <div className="bg-lamar-navy rounded-2xl p-2 shadow-2xl border border-white/10 ring-1 ring-black/5">
+                    <LoginWidget onNavigate={onNavigate} />
+                </div>
+            </div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
