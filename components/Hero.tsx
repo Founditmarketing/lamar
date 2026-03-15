@@ -37,10 +37,10 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                 {/* Left Side: Marketing Message */}
                 <Stagger className="flex-1 text-white z-10 max-w-4xl">
                     <FadeIn>
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lamar-navy border border-lamar-blue/30 text-xs font-mono tracking-widest text-lamar-blue mb-8 shadow-lg uppercase">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-lamar-navy border border-lamar-navy/30 text-xs font-mono tracking-widest text-lamar-navy mb-8 shadow-lg uppercase">
                             <span className="relative flex h-2 w-2">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lamar-blue opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-2 w-2 bg-lamar-blue"></span>
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lamar-navy opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-lamar-navy"></span>
                             </span>
                             [ 01 — SYSTEM ] The Future of Texas Banking
                         </div>
@@ -53,14 +53,14 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                     </FadeIn>
 
                     <FadeIn>
-                        <p className="text-xl md:text-2xl font-light max-w-xl text-gray-300 leading-relaxed mb-12 border-l-2 border-lamar-blue pl-6">
+                        <p className="text-xl md:text-2xl font-light max-w-xl text-gray-300 leading-relaxed mb-12 border-l-2 border-lamar-navy pl-6">
                             {t('hero.subtitle')}
                         </p>
                     </FadeIn>
 
                     <FadeIn className="flex flex-wrap gap-6">
                         <MagneticButton onClick={() => onNavigate('personal')}>
-                            <button className="group relative px-8 py-5 bg-lamar-blue text-white font-bold rounded-full overflow-hidden shadow-2xl hover:shadow-blue-900/50 transition-all">
+                            <button className="group relative px-8 py-5 bg-lamar-navy text-white font-bold rounded-full overflow-hidden shadow-2xl hover:shadow-blue-900/50 transition-all">
                                 <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
                                 <span className="relative flex items-center gap-3 text-lg">
                                     {t('hero.cta.open')} <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -78,7 +78,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
 
                 {/* Right Side: Login Widget */}
                 <div className="w-full md:w-[400px] flex-shrink-0 z-20 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-                    <div className="bg-lamar-navy border border-lamar-blue/20 rounded-3xl p-2 shadow-2xl ring-1 ring-white/5">
+                    <div className="bg-lamar-navy border border-lamar-navy/20 rounded-3xl p-2 shadow-2xl ring-1 ring-white/5">
                         <LoginWidget onNavigate={onNavigate} />
                     </div>
                 </div>

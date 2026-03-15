@@ -33,7 +33,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, im
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="group relative h-[450px] w-full overflow-hidden rounded-2xl shadow-xl transition-all duration-500 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-lamar-blue"
+      className="group relative h-[450px] w-full overflow-hidden rounded-2xl shadow-xl transition-all duration-500 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-lamar-navy"
       style={{ animationDelay: delay }}
     >
       {/* Background Image with Zoom Effect */}
@@ -56,11 +56,11 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, im
 
       {/* Content */}
       <div className="absolute bottom-0 left-0 right-0 p-8 text-left transform transition-transform duration-500 group-hover:-translate-y-2">
-        <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-md text-lamar-blue border border-white/20 shadow-lg group-hover:scale-110 transition-transform duration-500">
+        <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-md text-lamar-navy border border-white/20 shadow-lg group-hover:scale-110 transition-transform duration-500">
           <Icon size={28} />
         </div>
         
-        <h3 className="text-3xl font-heading font-bold text-white mb-3 tracking-tight group-hover:text-lamar-blue transition-colors duration-300">
+        <h3 className="text-3xl font-heading font-bold text-white mb-3 tracking-tight group-hover:text-lamar-navy transition-colors duration-300">
           {title}
         </h3>
         
@@ -68,7 +68,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, im
           {description}
         </p>
 
-        <span className="inline-flex items-center text-sm font-bold text-white bg-white/10 backdrop-blur-md px-6 py-3 rounded-full transition-all duration-300 group-hover:bg-lamar-blue group-hover:text-white group-hover:shadow-glow">
+        <span className="inline-flex items-center text-sm font-bold text-white bg-white/10 backdrop-blur-md px-6 py-3 rounded-full transition-all duration-300 group-hover:bg-lamar-navy group-hover:text-white group-hover:shadow-glow">
           Explore <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
         </span>
       </div>

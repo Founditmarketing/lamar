@@ -213,7 +213,7 @@ export const EducationPage: React.FC = () => {
 
                     {pathError && (
                         <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 flex items-center gap-3 animate-fadeIn">
-                            <AlertCircle className="text-blue-500" size={20} />
+                            <AlertCircle className="text-blue-900" size={20} />
                             <span className="text-blue-700 text-sm">{pathError}</span>
                         </div>
                     )}

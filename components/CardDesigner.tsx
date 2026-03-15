@@ -105,7 +105,7 @@ export const CardDesigner: React.FC = () => {
         <section className="py-16 bg-white border-t border-gray-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center gap-3 mb-8">
-                    <div className="bg-lamar-blue text-white p-2 rounded-lg">
+                    <div className="bg-lamar-navy text-white p-2 rounded-lg">
                         <Palette size={24} />
                     </div>
                     <div>
@@ -119,7 +119,7 @@ export const CardDesigner: React.FC = () => {
                     <div className="w-full lg:w-1/3 space-y-6">
                         {!apiKeySelected ? (
                             <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 text-center space-y-4">
-                                <div className="mx-auto w-12 h-12 bg-blue-100 text-lamar-blue rounded-full flex items-center justify-center">
+                                <div className="mx-auto w-12 h-12 bg-blue-100 text-lamar-navy rounded-full flex items-center justify-center">
                                     <Lock size={24} />
                                 </div>
                                 <h3 className="text-lg font-semibold text-gray-900">{t('card.unlock.title')}</h3>
@@ -128,12 +128,12 @@ export const CardDesigner: React.FC = () => {
                                 </p>
                                 <button 
                                     onClick={handleConnect}
-                                    className="w-full py-2 px-4 bg-lamar-blue text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-sm"
+                                    className="w-full py-2 px-4 bg-lamar-navy text-white rounded-lg font-semibold hover:bg-blue-950 transition-colors shadow-sm"
                                 >
                                     {t('card.connect')}
                                 </button>
                                 <p className="text-xs text-gray-400">
-                                    {t('card.see')} <a href="https://ai.google.dev/gemini-api/docs/billing" target="_blank" rel="noreferrer" className="underline hover:text-lamar-blue">{t('card.billing')}</a> {t('card.details')}.
+                                    {t('card.see')} <a href="https://ai.google.dev/gemini-api/docs/billing" target="_blank" rel="noreferrer" className="underline hover:text-lamar-navy">{t('card.billing')}</a> {t('card.details')}.
                                 </p>
                             </div>
                         ) : (
@@ -146,7 +146,7 @@ export const CardDesigner: React.FC = () => {
                                         value={prompt}
                                         onChange={(e) => setPrompt(e.target.value)}
                                         rows={4}
-                                        className="w-full rounded-lg border-gray-300 border p-3 shadow-sm focus:border-lamar-blue focus:ring-lamar-blue transition-colors"
+                                        className="w-full rounded-lg border-gray-300 border p-3 shadow-sm focus:border-lamar-navy focus:ring-lamar-navy transition-colors"
                                         placeholder={t('card.prompt.placeholder')}
                                     />
                                 </div>
@@ -162,7 +162,7 @@ export const CardDesigner: React.FC = () => {
                                                 onClick={() => setSize(s)}
                                                 className={`py-2 px-3 rounded-md text-sm font-medium border transition-all ${
                                                     size === s 
-                                                    ? 'bg-blue-50 border-lamar-blue text-lamar-blue ring-1 ring-lamar-blue' 
+                                                    ? 'bg-blue-50 border-lamar-navy text-lamar-navy ring-1 ring-lamar-navy' 
                                                     : 'border-gray-200 text-gray-600 hover:border-gray-300'
                                                 }`}
                                             >
@@ -175,7 +175,7 @@ export const CardDesigner: React.FC = () => {
                                 <button
                                     onClick={handleGenerate}
                                     disabled={loading || !prompt}
-                                    className="w-full flex items-center justify-center py-3 px-4 rounded-full bg-lamar-blue text-white font-bold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-blue disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-md"
+                                    className="w-full flex items-center justify-center py-3 px-4 rounded-full bg-lamar-navy text-white font-bold hover:bg-blue-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-navy disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-md"
                                 >
                                     {loading ? (
                                         <>
@@ -190,7 +190,7 @@ export const CardDesigner: React.FC = () => {
                                     )}
                                 </button>
                                 {error && (
-                                    <div className="text-blue-600 text-sm bg-blue-50 p-3 rounded-lg border border-blue-100">
+                                    <div className="text-blue-900 text-sm bg-blue-50 p-3 rounded-lg border border-blue-100">
                                         {error}
                                     </div>
                                 )}
@@ -226,7 +226,7 @@ export const CardDesigner: React.FC = () => {
                                 <div className="absolute inset-0 p-6 flex flex-col justify-between z-10 bg-gradient-to-t from-black/60 via-transparent to-black/30">
                                     <div className="flex justify-between items-start">
                                         <div className="flex items-center gap-2">
-                                            <div className="w-8 h-8 bg-white/90 rounded-sm flex items-center justify-center text-lamar-blue font-bold text-xl">L</div>
+                                            <div className="w-8 h-8 bg-white/90 rounded-sm flex items-center justify-center text-lamar-navy font-bold text-xl">L</div>
                                             <span className="text-white font-bold text-lg tracking-wider drop-shadow-md">LAMAR</span>
                                         </div>
                                         <span className="text-white/90 font-medium text-sm tracking-widest">{t('card.preview.debit')}</span>

@@ -163,7 +163,7 @@ export const SearchOverlay: React.FC<SearchOverlayProps> = ({ isOpen, onClose, i
                         onClick={toggleListening}
                         className={`p-3 rounded-full transition-all duration-300 ${
                             isListening 
-                                ? 'bg-blue-100 text-blue-600 animate-pulse ring-2 ring-blue-400' 
+                                ? 'bg-blue-100 text-blue-900 animate-pulse ring-2 ring-blue-400' 
                                 : 'hover:bg-gray-100 text-gray-500'
                         }`}
                         title="Search by voice"
@@ -172,7 +172,7 @@ export const SearchOverlay: React.FC<SearchOverlayProps> = ({ isOpen, onClose, i
                     </button>
 
                     {isLoading ? (
-                         <Loader2 className="animate-spin text-lamar-blue mx-2" size={24} />
+                         <Loader2 className="animate-spin text-lamar-navy mx-2" size={24} />
                     ) : (
                          <button 
                             onClick={onClose}
@@ -187,7 +187,7 @@ export const SearchOverlay: React.FC<SearchOverlayProps> = ({ isOpen, onClose, i
                 <div className="overflow-y-auto p-6 md:p-8 bg-gray-50 flex-grow min-h-[300px]">
                     
                     {error && (
-                        <div className="text-blue-600 bg-blue-50 p-4 rounded-lg border border-blue-100 text-center">
+                        <div className="text-blue-900 bg-blue-50 p-4 rounded-lg border border-blue-100 text-center">
                             {error}
                         </div>
                     )}
@@ -195,7 +195,7 @@ export const SearchOverlay: React.FC<SearchOverlayProps> = ({ isOpen, onClose, i
                     {isListening && !error && (
                         <div className="text-center py-8">
                              <div className="inline-block p-4 rounded-full bg-blue-50 mb-3">
-                                <Mic size={32} className="text-blue-500 animate-bounce" />
+                                <Mic size={32} className="text-blue-900 animate-bounce" />
                              </div>
                              <p className="text-gray-600 font-medium">{t('live.status.listening')}</p>
                         </div>
@@ -212,7 +212,7 @@ export const SearchOverlay: React.FC<SearchOverlayProps> = ({ isOpen, onClose, i
                     {result && !isListening && (
                         <div className="animate-fadeIn">
                              <div className="flex items-start gap-4 mb-6">
-                                <div className="mt-1 bg-gradient-to-br from-lamar-blue to-purple-600 text-white p-2 rounded-lg shadow-md flex-shrink-0">
+                                <div className="mt-1 bg-gradient-to-br from-lamar-navy to-purple-600 text-white p-2 rounded-lg shadow-md flex-shrink-0">
                                     <Sparkles size={20} />
                                 </div>
                                 <div className="prose prose-blue max-w-none">
@@ -233,12 +233,12 @@ export const SearchOverlay: React.FC<SearchOverlayProps> = ({ isOpen, onClose, i
                                                 href={source.uri} 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
-                                                className="flex items-center justify-between p-3 bg-white rounded-lg border border-gray-200 hover:border-lamar-blue hover:shadow-sm transition-all group"
+                                                className="flex items-center justify-between p-3 bg-white rounded-lg border border-gray-200 hover:border-lamar-navy hover:shadow-sm transition-all group"
                                              >
-                                                 <span className="text-sm font-medium text-gray-700 truncate mr-2 group-hover:text-lamar-blue">
+                                                 <span className="text-sm font-medium text-gray-700 truncate mr-2 group-hover:text-lamar-navy">
                                                      {source.title}
                                                  </span>
-                                                 <ArrowRight size={14} className="text-gray-300 group-hover:text-lamar-blue" />
+                                                 <ArrowRight size={14} className="text-gray-300 group-hover:text-lamar-navy" />
                                              </a>
                                          ))}
                                      </div>

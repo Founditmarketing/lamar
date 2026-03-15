@@ -99,7 +99,7 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
   return (
     <div className="bg-gray-50 pb-16">
       {/* Page Hero - Compact */}
-      <div className="bg-lamar-blue text-white py-12 md:py-16 relative overflow-hidden">
+      <div className="bg-lamar-navy text-white py-12 md:py-16 relative overflow-hidden">
         {/* Abstract Background Decoration */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
@@ -116,10 +116,10 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           
           {/* Checking & Savings Card */}
-          <div id="checking" className="bg-white rounded-xl shadow-lg border-t-4 border-lamar-blue hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full scroll-mt-24">
+          <div id="checking" className="bg-white rounded-xl shadow-lg border-t-4 border-lamar-navy hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full scroll-mt-24">
             <div className="p-6 md:p-8 flex-grow flex flex-col">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-lamar-blue flex-shrink-0">
+                <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-lamar-navy flex-shrink-0">
                     <CreditCard size={28} />
                 </div>
                 <div>
@@ -134,15 +134,15 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
               
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-3 text-sm text-gray-700">
-                    <CheckCircle2 size={18} className="text-lamar-blue flex-shrink-0" /> 
+                    <CheckCircle2 size={18} className="text-lamar-navy flex-shrink-0" /> 
                     <span>{t('personal.checking.list1')}</span>
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-700">
-                    <CheckCircle2 size={18} className="text-lamar-blue flex-shrink-0" /> 
+                    <CheckCircle2 size={18} className="text-lamar-navy flex-shrink-0" /> 
                     <span>{t('personal.checking.list2')}</span>
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-700">
-                    <CheckCircle2 size={18} className="text-lamar-blue flex-shrink-0" /> 
+                    <CheckCircle2 size={18} className="text-lamar-navy flex-shrink-0" /> 
                     <span>{t('personal.checking.list3')}</span>
                 </li>
               </ul>
@@ -150,13 +150,13 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
               <div className="flex flex-wrap gap-3 mt-auto">
                 <button 
                     onClick={() => onNavigate('compare-accounts')}
-                    className="flex-1 inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-bold rounded-lg shadow-sm text-white bg-lamar-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-blue transition-colors whitespace-nowrap"
+                    className="flex-1 inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-bold rounded-lg shadow-sm text-white bg-lamar-navy hover:bg-blue-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-navy transition-colors whitespace-nowrap"
                 >
                     {t('personal.checking.btn')}
                 </button>
                 <button 
                     onClick={() => onNavigate('card-design')}
-                    className="flex-1 inline-flex items-center justify-center px-6 py-3 border border-lamar-blue text-sm font-bold rounded-lg text-lamar-blue bg-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-blue transition-colors gap-2 whitespace-nowrap"
+                    className="flex-1 inline-flex items-center justify-center px-6 py-3 border border-lamar-navy text-sm font-bold rounded-lg text-lamar-navy bg-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-navy transition-colors gap-2 whitespace-nowrap"
                 >
                     <Palette size={16} /> Custom Card
                 </button>
@@ -165,10 +165,10 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
           </div>
 
           {/* Loans Card */}
-          <div id="lending" className="bg-white rounded-xl shadow-lg border-t-4 border-lamar-blue hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full scroll-mt-24">
+          <div id="lending" className="bg-white rounded-xl shadow-lg border-t-4 border-lamar-navy hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full scroll-mt-24">
             <div className="p-6 md:p-8 flex-grow flex flex-col">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-lamar-blue flex-shrink-0">
+                <div className="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center text-lamar-navy flex-shrink-0">
                     <Home size={28} />
                 </div>
                 <div>
@@ -200,7 +200,7 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
                 href="https://loans.lamarnational.com/s/login/?language=en_US&ec=302&startURL=%2Fs%2F" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-bold rounded-lg shadow-sm text-white bg-lamar-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-blue transition-colors mt-auto"
+                className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-sm font-bold rounded-lg shadow-sm text-white bg-lamar-navy hover:bg-blue-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lamar-navy transition-colors mt-auto"
               >
                 {t('personal.lending.btn')}
               </a>
@@ -209,7 +209,7 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
         </div>
         
         {/* Smart Savings Goal Planner */}
-        <div className="bg-gradient-to-br from-teal-900 via-teal-800 to-lamar-blue rounded-2xl shadow-2xl overflow-hidden relative">
+        <div className="bg-gradient-to-br from-teal-900 via-teal-800 to-lamar-navy rounded-2xl shadow-2xl overflow-hidden relative">
             <div className="absolute top-0 right-0 p-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
             
             <div className="p-6 md:p-10 relative z-10">
@@ -253,7 +253,7 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
                         <button 
                             onClick={() => generatePlan(goal)}
                             disabled={loadingPlan || !goal}
-                            className="w-full bg-gradient-to-r from-teal-400 to-lamar-blue text-white font-bold py-4 px-8 rounded-xl hover:shadow-lg hover:scale-[1.01] transition-all flex items-center justify-center gap-3 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
+                            className="w-full bg-gradient-to-r from-teal-400 to-lamar-navy text-white font-bold py-4 px-8 rounded-xl hover:shadow-lg hover:scale-[1.01] transition-all flex items-center justify-center gap-3 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
                         >
                             {loadingPlan ? <Loader2 className="animate-spin" /> : <Target size={20} />}
                             {loadingPlan ? t('planner.creating') : t('planner.btn.create')}
@@ -336,7 +336,7 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
         {/* Digital Banking Feature */}
         <div id="mobile" className="mt-12 bg-white rounded-xl shadow-sm border border-gray-200 p-8 flex flex-col md:flex-row items-center gap-8 scroll-mt-24">
             <div className="flex-1">
-                <div className="inline-block bg-blue-100 text-lamar-blue px-3 py-1 rounded-full text-xs font-bold uppercase mb-4">{t('personal.mobile.badge')}</div>
+                <div className="inline-block bg-blue-100 text-lamar-navy px-3 py-1 rounded-full text-xs font-bold uppercase mb-4">{t('personal.mobile.badge')}</div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('personal.mobile.title')}</h2>
                 <p className="text-gray-600 mb-6">
                     {t('personal.mobile.desc')}

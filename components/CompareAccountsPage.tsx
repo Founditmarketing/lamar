@@ -12,7 +12,7 @@ export const CompareAccountsPage: React.FC = () => {
   // Helper to render check or minus
   const renderBoolean = (val: boolean) => {
     return val ? (
-        <div className="flex justify-center text-lamar-blue"><Check size={20} /></div>
+        <div className="flex justify-center text-lamar-navy"><Check size={20} /></div>
     ) : (
         <div className="flex justify-center text-gray-300"><Minus size={20} /></div>
     );
@@ -66,7 +66,7 @@ export const CompareAccountsPage: React.FC = () => {
   return (
     <div className="bg-gray-50 pb-16">
       {/* Page Hero */}
-      <div className="bg-lamar-blue text-white py-8 md:py-16 transition-all">
+      <div className="bg-lamar-navy text-white py-8 md:py-16 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4">{t('compare.title')}</h1>
           <p className="text-base md:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
@@ -79,7 +79,7 @@ export const CompareAccountsPage: React.FC = () => {
         
         {/* AI Advisor Section */}
         <div className="bg-white rounded-xl shadow-lg border border-purple-100 overflow-hidden relative">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-lamar-blue"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-lamar-navy"></div>
             <div className="p-5 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-start">
                 <div className="flex-1 space-y-3 w-full">
                     <div className="flex items-center gap-2 text-purple-700 font-bold uppercase text-xs tracking-wider">
@@ -139,7 +139,7 @@ export const CompareAccountsPage: React.FC = () => {
                   </th>
                   
                   <th className="p-4 md:p-6 text-center w-1/4 border-l border-gray-100 bg-blue-50/30 min-w-[160px]">
-                    <div className="text-base md:text-xl font-bold text-lamar-blue">{t('compare.acct.interest')}</div>
+                    <div className="text-base md:text-xl font-bold text-lamar-navy">{t('compare.acct.interest')}</div>
                     <div className="text-xs md:text-sm text-gray-500 mt-1">{t('compare.desc.int')}</div>
                   </th>
                   
@@ -222,12 +222,12 @@ export const CompareAccountsPage: React.FC = () => {
                 <tr className="bg-gray-50 border-t border-gray-200">
                   <td className="sticky left-0 z-10 bg-gray-50 p-4 md:p-6 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.1)] border-r border-gray-200"></td>
                   <td className="p-4 md:p-6 border-l border-gray-200">
-                    <a href="https://www.lamarnationalbank.com/contact-us/" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2.5 md:py-3 px-2 md:px-4 bg-lamar-blue text-white font-bold rounded-lg hover:bg-blue-700 transition-colors shadow-sm text-sm whitespace-nowrap">
+                    <a href="https://www.lamarnationalbank.com/contact-us/" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2.5 md:py-3 px-2 md:px-4 bg-lamar-navy text-white font-bold rounded-lg hover:bg-blue-950 transition-colors shadow-sm text-sm whitespace-nowrap">
                       {t('compare.btn.open')}
                     </a>
                   </td>
                   <td className="p-4 md:p-6 border-l border-gray-200 bg-blue-50/30">
-                    <a href="https://www.lamarnationalbank.com/contact-us/" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2.5 md:py-3 px-2 md:px-4 bg-lamar-blue text-white font-bold rounded-lg hover:bg-blue-700 transition-colors shadow-sm text-sm whitespace-nowrap">
+                    <a href="https://www.lamarnationalbank.com/contact-us/" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2.5 md:py-3 px-2 md:px-4 bg-lamar-navy text-white font-bold rounded-lg hover:bg-blue-950 transition-colors shadow-sm text-sm whitespace-nowrap">
                       {t('compare.btn.open')}
                     </a>
                   </td>

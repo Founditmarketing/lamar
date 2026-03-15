@@ -51,10 +51,10 @@ export const ServiceGrid: React.FC<ServiceGridProps> = ({ onNavigate }) => {
                 rel={!service.internalLink ? "noopener noreferrer" : undefined}
                 className="group flex flex-col items-center justify-center p-2 rounded-xl hover:bg-blue-50/50 transition-all duration-300 cursor-pointer"
               >
-                <div className="bg-blue-50 w-12 h-12 md:w-14 md:h-14 rounded-2xl flex items-center justify-center text-lamar-blue group-hover:scale-110 group-hover:bg-lamar-blue group-hover:text-white group-hover:shadow-lg group-hover:shadow-blue-500/30 transition-all duration-300 mb-2">
+                <div className="bg-blue-50 w-12 h-12 md:w-14 md:h-14 rounded-2xl flex items-center justify-center text-lamar-navy group-hover:scale-110 group-hover:bg-lamar-navy group-hover:text-white group-hover:shadow-lg group-hover:shadow-blue-500/30 transition-all duration-300 mb-2">
                   <service.icon size={24} strokeWidth={2} />
                 </div>
-                <span className="text-[10px] md:text-xs font-bold text-gray-600 group-hover:text-lamar-blue transition-colors text-center leading-tight">
+                <span className="text-[10px] md:text-xs font-bold text-gray-600 group-hover:text-lamar-navy transition-colors text-center leading-tight">
                   {service.label}
                 </span>
               </a>

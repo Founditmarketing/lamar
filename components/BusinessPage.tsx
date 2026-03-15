@@ -102,7 +102,7 @@ export const BusinessPage: React.FC = () => {
           <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
             {t('business.subtitle')}
           </p>
-          <a href="https://www.lamarnationalbank.com/business/commercial-lending/" target="_blank" rel="noopener noreferrer" className="inline-block mt-8 bg-lamar-blue hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors">
+          <a href="https://www.lamarnationalbank.com/business/commercial-lending/" target="_blank" rel="noopener noreferrer" className="inline-block mt-8 bg-lamar-navy hover:bg-blue-950 text-white font-bold py-3 px-8 rounded-full transition-colors">
             {t('business.cta')}
           </a>
         </div>
@@ -115,7 +115,7 @@ export const BusinessPage: React.FC = () => {
             <div className="lg:col-span-2 space-y-12">
                 <section id="lending" className="scroll-mt-24">
                     <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                        <Briefcase className="text-lamar-blue" /> {t('business.lending.title')}
+                        <Briefcase className="text-lamar-navy" /> {t('business.lending.title')}
                     </h2>
                     <p className="text-gray-600 mb-6 text-lg">
                         {t('business.lending.desc')}
@@ -142,7 +142,7 @@ export const BusinessPage: React.FC = () => {
 
                 <section id="treasury" className="scroll-mt-24">
                     <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                        <PieChart className="text-lamar-blue" /> {t('business.treasury.title')}
+                        <PieChart className="text-lamar-navy" /> {t('business.treasury.title')}
                     </h2>
                     <p className="text-gray-600 mb-4">
                         {t('business.treasury.desc')}
@@ -155,7 +155,7 @@ export const BusinessPage: React.FC = () => {
                           t('business.treasury.list4')
                         ].map((item) => (
                             <li key={item} className="flex items-center gap-3 text-gray-700">
-                                <div className="w-2 h-2 bg-lamar-blue rounded-full"></div>
+                                <div className="w-2 h-2 bg-lamar-navy rounded-full"></div>
                                 {item}
                             </li>
                         ))}
@@ -211,7 +211,7 @@ export const BusinessPage: React.FC = () => {
                                 <button 
                                     onClick={handleGenerateStrategy}
                                     disabled={aiLoading || !revenue || !industry || !focus}
-                                    className="w-full bg-gradient-to-r from-lamar-blue to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:opacity-50 text-white font-bold py-3 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2 mt-2"
+                                    className="w-full bg-gradient-to-r from-lamar-navy to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:opacity-50 text-white font-bold py-3 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2 mt-2"
                                 >
                                     {aiLoading ? <Loader2 size={18} className="animate-spin" /> : <Target size={18} />}
                                     {aiLoading ? t('biz.growth.analyzing') : t('biz.growth.btn')}
@@ -261,7 +261,7 @@ export const BusinessPage: React.FC = () => {
                 </div>
 
                 {/* Directory Box */}
-                <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-lamar-blue">
+                <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-lamar-navy">
                     <h3 className="text-xl font-bold text-gray-900 mb-6">{t('business.sidebar.title')}</h3>
                     <div className="space-y-6">
                         <div className="flex items-start gap-4">
@@ -269,7 +269,7 @@ export const BusinessPage: React.FC = () => {
                             <div>
                                 <h4 className="font-semibold text-gray-900">{t('business.team.title')}</h4>
                                 <p className="text-sm text-gray-500 mt-1">{t('business.team.desc')}</p>
-                                <a href="https://www.lamarnationalbank.com/business/commercial-lending/" target="_blank" rel="noopener noreferrer" className="text-lamar-blue text-sm font-medium mt-2 inline-block hover:underline">{t('business.team.link')} &rarr;</a>
+                                <a href="https://www.lamarnationalbank.com/business/commercial-lending/" target="_blank" rel="noopener noreferrer" className="text-lamar-navy text-sm font-medium mt-2 inline-block hover:underline">{t('business.team.link')} &rarr;</a>
                             </div>
                         </div>
                         <div className="w-full h-px bg-gray-100"></div>
@@ -278,7 +278,7 @@ export const BusinessPage: React.FC = () => {
                             <div>
                                 <h4 className="font-semibold text-gray-900">{t('business.rates.title')}</h4>
                                 <p className="text-sm text-gray-500 mt-1">{t('business.rates.desc')}</p>
-                                <a href="https://www.lamarnationalbank.com/rates/" target="_blank" rel="noopener noreferrer" className="text-lamar-blue text-sm font-medium mt-2 inline-block hover:underline">{t('business.rates.link')} &rarr;</a>
+                                <a href="https://www.lamarnationalbank.com/rates/" target="_blank" rel="noopener noreferrer" className="text-lamar-navy text-sm font-medium mt-2 inline-block hover:underline">{t('business.rates.link')} &rarr;</a>
                             </div>
                         </div>
                     </div>

@@ -76,11 +76,11 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-lamar-blue/50 rounded-full hover:bg-lamar-blue transition-colors;
+    @apply bg-lamar-navy/50 rounded-full hover:bg-lamar-navy transition-colors;
   }
 
   /* Premium Text Selection */
   ::selection {
-    @apply bg-lamar-blue/30 text-lamar-navy;
+    @apply bg-lamar-navy/30 text-lamar-navy;
   }
 }

@@ -118,7 +118,7 @@ const AppContent: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 animate-fade-up" style={{ animationDelay: '0.6s' }}>
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">{t('home.wellness')}</h2>
-                <div className="h-1 w-20 bg-lamar-blue mx-auto rounded-full"></div>
+                <div className="h-1 w-20 bg-lamar-navy mx-auto rounded-full"></div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -173,7 +173,7 @@ const AppContent: React.FC = () => {
                     <div className="space-y-4">
                       {[4, 5, 6].map((num) => (
                         <div key={num} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                          <h4 className="font-bold text-lamar-blue mb-2">{t(`faq.q${num}`)}</h4>
+                          <h4 className="font-bold text-lamar-navy mb-2">{t(`faq.q${num}`)}</h4>
                           <p className="text-gray-600 text-sm leading-relaxed">{t(`faq.a${num}`)}</p>
                         </div>
                       ))}
@@ -189,7 +189,7 @@ const AppContent: React.FC = () => {
 
   return (
     <ReactLenis root>
-      <div className="min-h-screen flex flex-col font-sans bg-gray-50 selection:bg-lamar-blue selection:text-white">
+      <div className="min-h-screen flex flex-col font-sans bg-gray-50 selection:bg-lamar-navy selection:text-white">
         <Header onNavigate={handleNavClick} currentPage={currentPage} />
         <main className="flex-grow">
           {renderContent()}

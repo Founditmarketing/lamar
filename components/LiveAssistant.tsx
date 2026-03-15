@@ -192,7 +192,7 @@ export const LiveAssistant: React.FC = () => {
       <button
         onClick={toggleSession}
         className={`fixed bottom-6 right-6 z-50 p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105 ${
-          isOpen ? 'bg-blue-600 rotate-0' : 'bg-lamar-blue hover:bg-blue-700'
+          isOpen ? 'bg-blue-900 rotate-0' : 'bg-lamar-navy hover:bg-blue-950'
         }`}
         aria-label={t('live.btn.start')}
       >
@@ -217,21 +217,21 @@ export const LiveAssistant: React.FC = () => {
            <div className="p-8 flex flex-col items-center justify-center min-h-[240px] bg-gradient-to-b from-gray-50 to-white relative">
                
                {error ? (
-                   <div className="text-center text-blue-600 p-4">
+                   <div className="text-center text-blue-900 p-4">
                        <p className="font-semibold mb-2">{error}</p>
                        <p className="text-xs text-gray-500 mb-2">{t('live.console')}</p>
                        <button onClick={connect} className="text-xs bg-blue-100 px-3 py-1 rounded-full hover:bg-blue-200">{t('live.retry')}</button>
                    </div>
                ) : !isConnected ? (
                    <div className="flex flex-col items-center gap-3 text-gray-500">
-                       <Loader2 className="animate-spin text-lamar-blue" size={32} />
+                       <Loader2 className="animate-spin text-lamar-navy" size={32} />
                        <span className="text-sm font-medium">{t('live.status.connecting')}</span>
                    </div>
                ) : (
                    <div className="relative">
                        {/* Visualizer Circle */}
                        <div className={`w-32 h-32 rounded-full flex items-center justify-center transition-all duration-300 ${isSpeaking ? 'bg-blue-100 scale-110' : 'bg-gray-100'}`}>
-                           <div className={`w-24 h-24 rounded-full flex items-center justify-center transition-all duration-150 ${isSpeaking ? 'bg-blue-500 shadow-lg shadow-blue-500/50 scale-105' : 'bg-lamar-blue'}`}>
+                           <div className={`w-24 h-24 rounded-full flex items-center justify-center transition-all duration-150 ${isSpeaking ? 'bg-blue-900 shadow-lg shadow-blue-500/50 scale-105' : 'bg-lamar-navy'}`}>
                                <Mic className="text-white w-10 h-10" />
                            </div>
                        </div>

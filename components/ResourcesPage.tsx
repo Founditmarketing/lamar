@@ -92,15 +92,15 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({ onNavigate }) => {
         {activeTool === 'none' ? (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Calculator Card */}
-                <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-8 border-t-4 border-lamar-blue">
-                    <div className="w-14 h-14 bg-blue-50 text-lamar-blue rounded-xl flex items-center justify-center mb-6">
+                <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-8 border-t-4 border-lamar-navy">
+                    <div className="w-14 h-14 bg-blue-50 text-lamar-navy rounded-xl flex items-center justify-center mb-6">
                         <Calculator size={32} />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-3">{t('resources.calc.title')}</h3>
                     <p className="text-gray-600 mb-6">{t('resources.calc.desc')}</p>
                     <button 
                         onClick={() => setActiveTool('mortgage')}
-                        className="w-full py-3 border border-lamar-blue text-lamar-blue font-bold rounded-lg hover:bg-blue-50 transition-colors flex items-center justify-center gap-2"
+                        className="w-full py-3 border border-lamar-navy text-lamar-navy font-bold rounded-lg hover:bg-blue-50 transition-colors flex items-center justify-center gap-2"
                     >
                         {t('res.btn.mortgage')} <ArrowRight size={18} />
                     </button>
@@ -108,14 +108,14 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({ onNavigate }) => {
 
                 {/* Security Card */}
                 <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-8 border-t-4 border-blue-500">
-                    <div className="w-14 h-14 bg-blue-50 text-blue-500 rounded-xl flex items-center justify-center mb-6">
+                    <div className="w-14 h-14 bg-blue-50 text-blue-900 rounded-xl flex items-center justify-center mb-6">
                         <ShieldCheck size={32} />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-3">{t('resources.sec.title')}</h3>
                     <p className="text-gray-600 mb-6">{t('resources.sec.desc')}</p>
                     <button 
                         onClick={() => handleNav('security')}
-                        className="w-full py-3 border border-blue-500 text-blue-500 font-bold rounded-lg hover:bg-blue-50 transition-colors flex items-center justify-center gap-2"
+                        className="w-full py-3 border border-blue-500 text-blue-900 font-bold rounded-lg hover:bg-blue-50 transition-colors flex items-center justify-center gap-2"
                     >
                         {t('res.btn.security')} <ArrowRight size={18} />
                     </button>
@@ -160,7 +160,7 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({ onNavigate }) => {
                                     type="number" 
                                     value={loanAmount}
                                     onChange={(e) => setLoanAmount(e.target.value)}
-                                    className="w-full pl-9 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lamar-blue focus:border-transparent"
+                                    className="w-full pl-9 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lamar-navy focus:border-transparent"
                                 />
                             </div>
                         </div>
@@ -173,7 +173,7 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({ onNavigate }) => {
                                     type="number" 
                                     value={downPayment}
                                     onChange={(e) => setDownPayment(e.target.value)}
-                                    className="w-full pl-9 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lamar-blue focus:border-transparent"
+                                    className="w-full pl-9 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lamar-navy focus:border-transparent"
                                 />
                             </div>
                         </div>
@@ -187,7 +187,7 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({ onNavigate }) => {
                                         type="number" 
                                         value={interestRate}
                                         onChange={(e) => setInterestRate(e.target.value)}
-                                        className="w-full pl-9 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lamar-blue focus:border-transparent"
+                                        className="w-full pl-9 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lamar-navy focus:border-transparent"
                                     />
                                 </div>
                             </div>
@@ -198,7 +198,7 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({ onNavigate }) => {
                                     <select 
                                         value={loanTerm}
                                         onChange={(e) => setLoanTerm(e.target.value)}
-                                        className="w-full pl-9 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lamar-blue focus:border-transparent appearance-none bg-white"
+                                        className="w-full pl-9 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lamar-navy focus:border-transparent appearance-none bg-white"
                                     >
                                         <option value="30">30 {t('res.calc.years')}</option>
                                         <option value="20">20 {t('res.calc.years')}</option>
@@ -211,7 +211,7 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({ onNavigate }) => {
 
                         <button 
                             onClick={calculateMortgage}
-                            className="w-full bg-lamar-blue text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition-all shadow-md mt-4"
+                            className="w-full bg-lamar-navy text-white font-bold py-4 rounded-lg hover:bg-blue-950 transition-all shadow-md mt-4"
                         >
                             {t('calc.btn.calculate')}
                         </button>
@@ -234,7 +234,7 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({ onNavigate }) => {
                                         href="https://loans.lamarnational.com/s/login/?language=en_US&ec=302&startURL=%2Fs%2F"
                                         target="_blank" 
                                         rel="noopener noreferrer"
-                                        className="w-full bg-lamar-blue text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 shadow-sm"
+                                        className="w-full bg-lamar-navy text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-950 transition-colors flex items-center justify-center gap-2 shadow-sm"
                                     >
                                         Start Mortgage Application <ExternalLink size={18} />
                                     </a>
@@ -244,7 +244,7 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({ onNavigate }) => {
                                         <button 
                                             onClick={getAiInsight}
                                             disabled={aiLoading}
-                                            className="w-full bg-white border border-blue-200 text-lamar-blue font-bold py-3 px-6 rounded-lg hover:bg-blue-50 transition-colors flex items-center justify-center gap-2"
+                                            className="w-full bg-white border border-blue-200 text-lamar-navy font-bold py-3 px-6 rounded-lg hover:bg-blue-50 transition-colors flex items-center justify-center gap-2"
                                         >
                                             {aiLoading ? <Loader2 className="animate-spin" /> : <Sparkles size={18} />}
                                             {aiLoading ? t('calc.ai.loading') : t('calc.btn.ai')}
@@ -254,7 +254,7 @@ export const ResourcesPage: React.FC<ResourcesPageProps> = ({ onNavigate }) => {
 
                                 {aiInsight && (
                                     <div className="mt-8 bg-white p-6 rounded-xl border border-blue-100 text-left animate-slideUp relative overflow-hidden">
-                                        <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-lamar-blue to-purple-500"></div>
+                                        <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-lamar-navy to-purple-500"></div>
                                         <h4 className="flex items-center gap-2 font-bold text-gray-900 mb-2">
                                             <Sparkles size={16} className="text-purple-500" /> {t('calc.ai.title')}
                                         </h4>

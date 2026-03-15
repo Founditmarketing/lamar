@@ -42,7 +42,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
 
   return (
     <>
-      <header className="bg-lamar-blue/95 backdrop-blur-md border-b border-white/10 text-white w-full shadow-lg z-50 sticky top-0 transition-all duration-300">
+      <header className="bg-lamar-navy/95 backdrop-blur-md border-b border-white/10 text-white w-full shadow-lg z-50 sticky top-0 transition-all duration-300">
         {/* Top utility bar */}
         <div className="bg-lamar-navy text-xs py-1 px-4 hidden md:flex justify-end gap-4 text-gray-300">
           <button onClick={() => handleNavClick('locations')} className="hover:text-white transition-colors">{t('nav.atm')}</button>
@@ -82,7 +82,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
             {/* Search Icon & Mobile Menu Button */}
             <div className="flex items-center gap-4">
               <button
-                className="hidden md:block p-2 hover:bg-blue-700 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-white"
+                className="hidden md:block p-2 hover:bg-blue-950 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-white"
                 title={t('nav.search')}
                 onClick={() => setIsSearchOverlayOpen(true)}
                 aria-label={t('nav.search')}
@@ -90,7 +90,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
                 <Search size={20} />
               </button>
               <button
-                className="md:hidden p-2 hover:bg-blue-700 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-white z-50 relative"
+                className="md:hidden p-2 hover:bg-blue-950 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-white z-50 relative"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 aria-label={isMobileMenuOpen ? t('nav.menu.close') : t('nav.menu.open')}
                 aria-expanded={isMobileMenuOpen}

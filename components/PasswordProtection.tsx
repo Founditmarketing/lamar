@@ -57,7 +57,7 @@ export const PasswordProtection: React.FC<PasswordProtectionProps> = ({ children
                             autoFocus
                         />
                         {error && (
-                            <p className="text-blue-500 text-sm mt-2 text-left">Incorrect password</p>
+                            <p className="text-blue-900 text-sm mt-2 text-left">Incorrect password</p>
                         )}
                     </div>
 

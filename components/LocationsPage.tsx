@@ -204,7 +204,7 @@ export const LocationsPage: React.FC = () => {
   return (
     <div className="flex flex-col h-[calc(100vh-64px)] bg-gray-50">
       {/* Top Search Bar */}
-      <div className="bg-lamar-blue p-4 shadow-md z-10 flex-shrink-0">
+      <div className="bg-lamar-navy p-4 shadow-md z-10 flex-shrink-0">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 items-center">
             <h1 className="text-white font-bold text-xl md:mr-8 whitespace-nowrap">{t('loc.title')}</h1>
             
@@ -232,7 +232,7 @@ export const LocationsPage: React.FC = () => {
               
               {/* Intelligent AI Search Input */}
               <div className="p-4 border-b border-gray-100 bg-gradient-to-r from-blue-50 to-white">
-                  <label className="text-xs font-bold text-lamar-blue uppercase tracking-wider mb-2 flex items-center gap-1">
+                  <label className="text-xs font-bold text-lamar-navy uppercase tracking-wider mb-2 flex items-center gap-1">
                       <Sparkles size={12} /> {t('loc.smart')}
                   </label>
                   <div className="relative">
@@ -240,12 +240,12 @@ export const LocationsPage: React.FC = () => {
                         value={aiQuery}
                         onChange={(e) => setAiQuery(e.target.value)}
                         placeholder={t('loc.ai.placeholder')}
-                        className="w-full pl-3 pr-10 py-2 text-sm border border-blue-200 rounded-lg focus:ring-2 focus:ring-lamar-blue focus:border-transparent resize-none h-20"
+                        className="w-full pl-3 pr-10 py-2 text-sm border border-blue-200 rounded-lg focus:ring-2 focus:ring-lamar-navy focus:border-transparent resize-none h-20"
                       />
                       <button 
                         onClick={handleAiSearch}
                         disabled={aiLoading || !aiQuery}
-                        className="absolute bottom-2 right-2 bg-lamar-blue text-white p-1.5 rounded-md hover:bg-blue-700 disabled:opacity-50 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-lamar-blue"
+                        className="absolute bottom-2 right-2 bg-lamar-navy text-white p-1.5 rounded-md hover:bg-blue-950 disabled:opacity-50 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-lamar-navy"
                       >
                           {aiLoading ? <Loader2 size={16} className="animate-spin" /> : <Map size={16} />}
                       </button>
@@ -256,7 +256,7 @@ export const LocationsPage: React.FC = () => {
               {aiResponse && (
                   <div className="p-4 bg-blue-50 border-b border-blue-100 animate-fadeIn">
                       <h4 className="text-sm font-bold text-gray-800 mb-2 flex items-center gap-2">
-                          <Sparkles size={14} className="text-lamar-blue" /> {t('loc.ai.results')}
+                          <Sparkles size={14} className="text-lamar-navy" /> {t('loc.ai.results')}
                       </h4>
                       <p className="text-sm text-gray-700 mb-3 leading-relaxed whitespace-pre-wrap">
                           {aiResponse}
@@ -269,7 +269,7 @@ export const LocationsPage: React.FC = () => {
                                     href={source.uri} 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 text-xs font-medium text-lamar-blue hover:underline bg-white p-2 rounded border border-blue-100 focus:outline-none focus:ring-2 focus:ring-lamar-blue"
+                                    className="flex items-center gap-2 text-xs font-medium text-lamar-navy hover:underline bg-white p-2 rounded border border-blue-100 focus:outline-none focus:ring-2 focus:ring-lamar-navy"
                                   >
                                       <ExternalLink size={12} /> {source.title}
                                   </a>
@@ -289,7 +289,7 @@ export const LocationsPage: React.FC = () => {
                       <button 
                         key={loc.id}
                         onClick={() => setActiveLocationId(loc.id)}
-                        className={`w-full text-left p-5 border-b border-gray-100 hover:bg-gray-50 cursor-pointer transition-colors focus:outline-none focus:bg-blue-50 focus:ring-2 focus:ring-inset focus:ring-lamar-blue ${activeLocationId === loc.id ? 'bg-blue-50 border-l-4 border-l-lamar-blue' : ''}`}
+                        className={`w-full text-left p-5 border-b border-gray-100 hover:bg-gray-50 cursor-pointer transition-colors focus:outline-none focus:bg-blue-50 focus:ring-2 focus:ring-inset focus:ring-lamar-navy ${activeLocationId === loc.id ? 'bg-blue-50 border-l-4 border-l-lamar-navy' : ''}`}
                         aria-pressed={activeLocationId === loc.id}
                       >
                           <div className="flex justify-between items-start mb-2">
@@ -301,13 +301,13 @@ export const LocationsPage: React.FC = () => {
                           
                           <div className="space-y-1 mb-4">
                               <div className="flex items-center gap-2 text-sm text-gray-600">
-                                  <Clock size={14} className="text-lamar-blue" />
+                                  <Clock size={14} className="text-lamar-navy" />
                                   <span className="font-medium">{t('loc.hours.lobby')}:</span>
                                   <span>{getHoursLabel(loc.lobbyHours)}</span>
                               </div>
                               {loc.driveThruHours && (
                                 <div className="flex items-center gap-2 text-sm text-gray-600">
-                                    <Clock size={14} className="text-lamar-blue" />
+                                    <Clock size={14} className="text-lamar-navy" />
                                     <span className="font-medium">{t('loc.hours.drive')}:</span>
                                     <span>{getHoursLabel(loc.driveThruHours)}</span>
                                 </div>
@@ -323,7 +323,7 @@ export const LocationsPage: React.FC = () => {
                           <div className="flex gap-3">
                                <div 
                                   onClick={(e) => { e.stopPropagation(); handleCall(loc.phone); }}
-                                  className="flex-1 flex items-center justify-center gap-2 bg-white border border-lamar-blue text-lamar-blue py-2 rounded-lg text-sm font-semibold hover:bg-blue-50 transition-colors cursor-pointer"
+                                  className="flex-1 flex items-center justify-center gap-2 bg-white border border-lamar-navy text-lamar-navy py-2 rounded-lg text-sm font-semibold hover:bg-blue-50 transition-colors cursor-pointer"
                                   role="button"
                                   tabIndex={0}
                                   onKeyDown={(e) => { if (e.key === 'Enter') handleCall(loc.phone); }}
@@ -332,7 +332,7 @@ export const LocationsPage: React.FC = () => {
                                </div>
                                <div 
                                   onClick={(e) => { e.stopPropagation(); handleDirections(loc); }}
-                                  className="flex-1 flex items-center justify-center gap-2 bg-lamar-blue text-white py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors cursor-pointer"
+                                  className="flex-1 flex items-center justify-center gap-2 bg-lamar-navy text-white py-2 rounded-lg text-sm font-semibold hover:bg-blue-950 transition-colors cursor-pointer"
                                   role="button"
                                   tabIndex={0}
                                   onKeyDown={(e) => { if (e.key === 'Enter') handleDirections(loc); }}

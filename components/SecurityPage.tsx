@@ -82,7 +82,7 @@ export const SecurityPage: React.FC = () => {
     const getRiskIcon = (risk: string) => {
         switch (risk) {
             case 'safe': return <CheckCircle2 size={24} className="text-green-600" />;
-            case 'danger': return <ShieldAlert size={24} className="text-blue-600" />;
+            case 'danger': return <ShieldAlert size={24} className="text-blue-900" />;
             default: return <AlertTriangle size={24} className="text-yellow-600" />;
         }
     };
@@ -128,7 +128,7 @@ export const SecurityPage: React.FC = () => {
                         <div className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden flex flex-col h-full">
                             <div className="p-5 border-b border-gray-100 bg-gray-50/50">
                                 <h2 className="text-lg font-bold text-gray-900 flex items-center gap-2">
-                                    <ScanLine className="text-lamar-blue" size={20} />
+                                    <ScanLine className="text-lamar-navy" size={20} />
                                     {t('sec.scam.title')}
                                 </h2>
                                 <p className="text-gray-500 mt-1.5 text-sm">
@@ -142,14 +142,14 @@ export const SecurityPage: React.FC = () => {
                                         value={scamText}
                                         onChange={(e) => setScamText(e.target.value)}
                                         placeholder={t('sec.scam.placeholder')}
-                                        className="w-full h-32 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lamar-blue focus:border-transparent resize-none transition-shadow text-gray-700 placeholder-gray-400 text-sm"
+                                        className="w-full h-32 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lamar-navy focus:border-transparent resize-none transition-shadow text-gray-700 placeholder-gray-400 text-sm"
                                     />
                                 </div>
                                 
                                 <button
                                     onClick={analyzeScam}
                                     disabled={loading || !scamText}
-                                    className="w-full bg-lamar-blue hover:bg-blue-700 disabled:opacity-50 text-white font-bold py-3 rounded-lg transition-all shadow-sm flex items-center justify-center gap-2 text-sm"
+                                    className="w-full bg-lamar-navy hover:bg-blue-950 disabled:opacity-50 text-white font-bold py-3 rounded-lg transition-all shadow-sm flex items-center justify-center gap-2 text-sm"
                                 >
                                     {loading ? <Loader2 className="animate-spin" size={18} /> : <ShieldCheck size={18} />}
                                     {loading ? t('sec.scam.analyzing') : t('sec.scam.btn')}

@@ -38,13 +38,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             title: t('about.val.community.title'),
             desc: t('about.val.community.desc'),
             icon: Users,
-            color: 'bg-lamar-blue'
+            color: 'bg-lamar-navy'
         },
         {
             title: t('about.val.service.title'),
             desc: t('about.val.service.desc'),
             icon: Heart,
-            color: 'bg-lamar-blue'
+            color: 'bg-lamar-navy'
         },
         {
             title: 'Institutional Stability',
@@ -56,7 +56,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             title: 'Texas Leadership',
             desc: 'Led by local business owners and visionaries who live where you do.',
             icon: Award,
-            color: 'bg-lamar-blue'
+            color: 'bg-lamar-navy'
         }
     ];
 
@@ -79,7 +79,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
                     <Stagger>
                         <FadeIn>
-                            <span className="inline-block py-1 px-3 mb-4 md:mb-6 rounded-full bg-lamar-blue/20 border border-lamar-blue/30 text-lamar-blue text-[10px] md:text-xs font-mono tracking-widest uppercase">
+                            <span className="inline-block py-1 px-3 mb-4 md:mb-6 rounded-full bg-lamar-navy/20 border border-lamar-navy/30 text-lamar-navy text-[10px] md:text-xs font-mono tracking-widest uppercase">
                                 Est. 1933 — Texas, USA
                             </span>
                         </FadeIn>
@@ -113,7 +113,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                             className="text-center"
                         >
                             <div className="flex justify-center mb-2 md:mb-4">
-                                <stat.icon className="text-lamar-blue" size={20} />
+                                <stat.icon className="text-lamar-navy" size={20} />
                             </div>
                             <div className="text-2xl md:text-4xl font-heading font-black text-lamar-navy mb-1">{stat.value}</div>
                             <div className="text-[10px] md:text-xs font-mono text-gray-500 uppercase tracking-widest">{stat.label}</div>
@@ -126,17 +126,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <section className="py-16 md:py-32 max-w-7xl mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center">
                     <div className="relative group">
-                        <div className="absolute -top-6 -left-6 md:-top-10 md:-left-10 w-24 h-24 md:w-40 md:h-40 bg-lamar-blue/10 rounded-full blur-2xl md:blur-3xl animate-pulse"></div>
+                        <div className="absolute -top-6 -left-6 md:-top-10 md:-left-10 w-24 h-24 md:w-40 md:h-40 bg-lamar-navy/10 rounded-full blur-2xl md:blur-3xl animate-pulse"></div>
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl skew-y-1 md:skew-y-1 group-hover:skew-y-0 transition-transform duration-700">
                             <img
-                                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2070"
+                                src="/blue-door-house.png"
                                 alt="Our History"
                                 className="w-full h-[350px] md:h-[600px] object-cover"
                             />
                             <div className="absolute inset-0 bg-lamar-navy/20 mix-blend-overlay"></div>
                         </div>
                         {/* Quote Overlay */}
-                        <div className="absolute -bottom-6 -right-4 md:-bottom-8 md:-right-8 bg-lamar-blue p-5 md:p-8 rounded-xl md:rounded-2xl shadow-2xl max-w-[200px] md:max-w-xs transform md:translate-x-0">
+                        <div className="absolute -bottom-6 -right-4 md:-bottom-8 md:-right-8 bg-lamar-navy p-5 md:p-8 rounded-xl md:rounded-2xl shadow-2xl max-w-[200px] md:max-w-xs transform md:translate-x-0">
                             <p className="text-white font-heading font-bold italic text-base md:text-xl leading-snug">
                                 "The bank that knows your name and understands your roots."
                             </p>
@@ -145,7 +145,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
                     <div className="space-y-6 md:space-y-8 mt-12 md:mt-0">
                         <div>
-                            <h2 className="text-xs font-mono text-lamar-blue tracking-[0.3em] uppercase mb-4">The Lamar Legacy</h2>
+                            <h2 className="text-xs font-mono text-lamar-navy tracking-[0.3em] uppercase mb-4">The Lamar Legacy</h2>
                             <h3 className="text-4xl md:text-6xl font-heading font-black text-lamar-navy leading-[1.1]">
                                 {t('about.story.title')}
                             </h3>
@@ -155,7 +155,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                             <p>
                                 {t('about.story.p1')}
                             </p>
-                            <div className="w-16 md:w-20 h-1 bg-lamar-blue rounded-full"></div>
+                            <div className="w-16 md:w-20 h-1 bg-lamar-navy rounded-full"></div>
                             <p>
                                 {t('about.story.p2')}
                             </p>
@@ -206,7 +206,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                                 <p className="text-sm md:text-base text-gray-600 font-light leading-relaxed">{value.desc}</p>
 
                                 {/* Decorative Line */}
-                                <div className="absolute bottom-0 left-10 right-10 h-1 bg-gradient-to-r from-transparent via-lamar-blue/30 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700"></div>
+                                <div className="absolute bottom-0 left-10 right-10 h-1 bg-gradient-to-r from-transparent via-lamar-navy/30 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700"></div>
                             </motion.div>
                         ))}
                     </div>
@@ -230,7 +230,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                         </FadeIn>
                         <FadeIn className="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
                             <MagneticButton>
-                                <button className="w-full md:w-auto bg-lamar-blue text-lamar-navy px-10 py-4 md:py-5 rounded-full font-black text-base md:text-lg hover:bg-white transition-all shadow-2xl">
+                                <button className="w-full md:w-auto bg-lamar-navy text-lamar-navy px-10 py-4 md:py-5 rounded-full font-black text-base md:text-lg hover:bg-white transition-all shadow-2xl">
                                     {t('about.lead.btn')}
                                 </button>
                             </MagneticButton>
