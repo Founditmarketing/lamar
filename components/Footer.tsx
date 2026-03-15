@@ -40,6 +40,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                             <li className="pl-8">
                                 <button onClick={() => onNavigate('lost-card')} className="hover:text-white hover:underline font-medium text-blue-400 hover:text-blue-300 transition-colors text-left">{t('footer.lost')}</button>
                             </li>
+                            <li className="flex items-center gap-3 pt-2">
+                                <div className="text-white font-mono bg-lamar-blue/20 rounded px-2 py-1 text-xs">{t('footer.routing')}: 111909870</div>
+                            </li>
                         </ul>
 
                         <h5 className="font-bold text-gray-100 mb-4 text-xs uppercase tracking-wider">{t('footer.follow')}</h5>
@@ -106,11 +109,21 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                         <ul className="space-y-3 text-sm text-gray-300">
                             <li><a href="https://www.dob.texas.gov/" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline block transition-colors">{t('footer.dobLink')}</a></li>
                             <li><button onClick={() => onNavigate('privacy')} className="hover:text-white hover:underline block transition-colors text-left">{t('footer.privacy')}</button></li>
+                            <li><a href="https://www.lamarnationalbank.com/mobileprivacypolicy/" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline block transition-colors">{t('footer.mobilePrivacy')}</a></li>
+                            <li><a href="https://www.lamarnationalbank.com/wp-content/uploads/2025/04/Lamar-National-Bank-Privacy-Notice-Rev-Apr-2025.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline block transition-colors">{t('footer.privacyNotice')}</a></li>
+                            <li><a href="https://www.lamarnationalbank.com/wp-content/uploads/2021/03/FDIC.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline block transition-colors">{t('footer.fdicNotice')}</a></li>
                             <li><button onClick={() => onNavigate('disclosures')} className="hover:text-white hover:underline block transition-colors text-left">{t('footer.terms')}</button></li>
                             <li><button onClick={() => onNavigate('security')} className="hover:text-white hover:underline block transition-colors text-left">{t('footer.security')}</button></li>
                             <li><button onClick={() => onNavigate('accessibility')} className="hover:text-white hover:underline block transition-colors text-left">{t('footer.accessibility')}</button></li>
                         </ul>
                     </div>
+                </div>
+
+                {/* VeriSign Security Block */}
+                <div className="py-8 my-8 border-y border-gray-800">
+                    <p className="text-xs text-gray-400 leading-relaxed max-w-4xl opacity-80">
+                        {t('footer.verisign')} 
+                    </p>
                 </div>
 
                 {/* Copyright & Legal */}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, Home, Car, CreditCard, Sparkles, Target, Loader2, Plane, AlertCircle, Calendar, Palette, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, Home, Car, CreditCard, Sparkles, Target, Loader2, Plane, AlertCircle, Calendar, Palette, CheckCircle2, GraduationCap } from 'lucide-react';
 import { GoogleGenAI } from "@google/genai";
 import { useLanguage } from './LanguageContext';
 
@@ -181,18 +181,24 @@ export const PersonalPage: React.FC<PersonalPageProps> = ({ onNavigate }) => {
                 {t('personal.lending.desc')}
               </p>
               
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="bg-gray-50 p-4 rounded-lg border border-gray-100 flex items-center gap-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                <div className="bg-gray-50 p-4 rounded-lg border border-gray-100 flex items-center gap-3 hover:border-lamar-navy transition-colors cursor-pointer">
                     <div className="bg-white p-2 rounded-full shadow-sm text-gray-500">
                         <Car size={18} />
                     </div>
                     <span className="font-bold text-gray-900 text-sm">{t('personal.lending.auto')}</span>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-lg border border-gray-100 flex items-center gap-3">
+                <div className="bg-gray-50 p-4 rounded-lg border border-gray-100 flex items-center gap-3 hover:border-lamar-navy transition-colors cursor-pointer">
                      <div className="bg-white p-2 rounded-full shadow-sm text-gray-500">
                         <Home size={18} />
                     </div>
                     <span className="font-bold text-gray-900 text-sm">{t('personal.lending.mortgage')}</span>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg border border-gray-100 flex items-center gap-3 hover:border-lamar-navy transition-colors cursor-pointer md:col-span-2 lg:col-span-1">
+                     <div className="bg-white p-2 rounded-full shadow-sm text-gray-500">
+                        <GraduationCap size={18} />
+                    </div>
+                    <span className="font-bold text-gray-900 text-sm">{t('personal.lending.student')}</span>
                 </div>
               </div>
 

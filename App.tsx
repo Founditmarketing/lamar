@@ -15,6 +15,7 @@ import { CardDesigner } from './components/CardDesigner';
 import { Footer } from './components/Footer';
 import { LiveAssistant } from './components/LiveAssistant';
 import { PlaceholderPage } from './components/PlaceholderPage';
+import { ContactPage } from './components/ContactPage';
 import { LanguageProvider, useLanguage } from './components/LanguageContext';
 import { JSONLD } from './components/JSONLD';
 import { ArrowRight, Smartphone, Home as HomeIcon, Briefcase } from 'lucide-react';
@@ -91,7 +92,7 @@ const AppContent: React.FC = () => {
       case 'security':
         return <SecurityPage />;
       case 'contact':
-        return <PlaceholderPage title="Contact Us" />;
+        return <ContactPage />;
       case 'careers':
         return <PlaceholderPage title="Careers" />;
       case 'news':
